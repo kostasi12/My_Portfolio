@@ -17,7 +17,7 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
 
         {/* Άλλαξα το gap-6 σε gap-3 για κινητά και md:gap-6 για υπολογιστή */}
         {/* Πρόσθεσα text-[10px] για πολύ μικρές οθόνες και sm:text-sm για κανονικές */}
-        <div className="flex items-center gap-1 sm:gap-4 md:gap-6 text-[11px] sm:text-sm font-medium">
+        <div className="flex items-center gap-1 sm:gap-4 md:gap-2 text-[10px] sm:text-sm font-medium">
           
           <a href="#about" 
              onClick={handleScroll} 

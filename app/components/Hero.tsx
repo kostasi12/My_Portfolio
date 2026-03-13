@@ -3,7 +3,7 @@ import { RevealOnScroll } from "./RevealOnScroll";
 export default function Hero({ t, handleScroll }: any) {
   return (
     /* λιγότερο padding pt-32 στο κινητό, pt-40 στον υπολογιστή */
-    <section className="pt-32 md:pt-40 pb-16 md:pb-22 text-center px-4 md:px-6">
+    <section className="pt-32 md:pt-40 pb-12 md:pb-22 text-center px-4 md:px-6">
       <RevealOnScroll>
         {/* text-4xl για κινητά ώστε να μην "σπάει" το όνομα σε 3 σειρές */}
         <h1 className="text-4xl md:text-6xl font-semibold tracking-tight animate-float leading-tight">
@@ -11,7 +11,7 @@ export default function Hero({ t, handleScroll }: any) {
         </h1>
         
         {/* text-lg στο κινητό για καλύτερη αναγνωσιμότητα */}
-        <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto px-2">
+        <p className="mt-8 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto px-2">
           {t.sub}
         </p>
 

@@ -11,7 +11,7 @@ export default function About({ t }: any) {
   };
 
   return (
-    <section id="about" className="py-10 md:py-16 px-4 md:px-6 bg-gray-900/40">
+    <section id="about" className="py-8 md:py-16 px-2 md:px-6 bg-gray-900/40">
       <div className="max-w-5xl mx-auto">
         <RevealOnScroll>
           <div className="text-center mb-12 md:mb-20">
@@ -26,7 +26,7 @@ export default function About({ t }: any) {
 
         <RevealOnScroll>
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-10 md:mb-12 tracking-tight text-white">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-8 md:mb-12 tracking-tight text-white">
               {t.skillsTitle}
             </h2>
             
