@@ -2,11 +2,11 @@ import { RevealOnScroll } from "./RevealOnScroll";
 
 export default function Experience({ t }: any) {
   return (
-    /* py-16 για κινητά, md:py-32 για υπολογιστή. px-4 για να μην κολλάει στις άκρες */
-    <section id="experience" className="py-10 px-6 max-w-6xl mx-auto text-center">
-      <div className="max-w-5xl mx-auto">
+    /* py για κινητά, md:py για υπολογιστή. px-4 για να μην κολλάει στις άκρες */
+    <section id="experience" className="py-8 md:py-16 px-6 bg-gray-900/40">
+      <div className="max-w-5xl mx-auto text-center">
         {/* text-3xl για κινητά */}
-        <h2 className="text-3xl md:text-4xl font-semibold mb-8 md:mb-12 tracking-tight text-white">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-12 tracking-tight text-white">
           {t.title}
         </h2>
         
