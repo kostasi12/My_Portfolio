@@ -3,8 +3,8 @@ import { FiMail } from "react-icons/fi";
 
 export default function Contact({ t }: any) {
   return (
-    /* py-16 για κινητά, md:py-32 για υπολογιστή. px-4 για ομοιομορφία */
-    <section id="contact" className="py-16 md:py-32 px-4 md:px-6 bg-gray-900/40 text-center">
+    /* py για κινητά, md:py για υπολογιστή. px-4 για ομοιομορφία */
+    <section id="contact" className="py-16 md:py-26 px-4 md:px-6 bg-gray-900/40 text-center">
       <RevealOnScroll>
         {/* text-3xl για mobile */}
         <h2 className="text-3xl md:text-4xl font-semibold mb-6 tracking-tight text-white">

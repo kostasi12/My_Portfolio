@@ -3,7 +3,7 @@ import { RevealOnScroll } from "./RevealOnScroll";
 export default function Experience({ t }: any) {
   return (
     /* py-16 για κινητά, md:py-32 για υπολογιστή. px-4 για να μην κολλάει στις άκρες */
-    <section id="experience" className="py-16 md:py-32 px-4 md:px-6 text-center">
+    <section id="experience" className="py-16 px-6 max-w-6xl mx-auto text-center">
       <div className="max-w-5xl mx-auto">
         {/* text-3xl για κινητά */}
         <h2 className="text-3xl md:text-4xl font-semibold mb-8 md:mb-12 tracking-tight text-white">
