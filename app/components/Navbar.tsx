@@ -14,7 +14,7 @@ export default function Navbar({ t, lang, setLang, handleScroll }: Navbar) {
         </div>
 
         <div className="flex items-center gap-6 text-sm font-medium">
-          {/* Προσθέσαμε hover:scale-105 για να μεγαλώνουν και transition για να είναι ομαλό */}
+          {/* hover:scale για να μεγαλώνουν και transition για να είναι ομαλό */}
           <a href="#about" 
              onClick={handleScroll} 
              className="text-gray-400 hover:text-white hover:scale-105 transition duration-300 inline-block"
