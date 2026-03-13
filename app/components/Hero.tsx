@@ -3,7 +3,7 @@ import { RevealOnScroll } from "./RevealOnScroll";
 export default function Hero({ t, handleScroll }: any) {
   return (
     /* λιγότερο padding pt-32 στο κινητό, pt-40 στον υπολογιστή */
-    <section className="pt-32 md:pt-40 pb-22 md:pb-22 text-center px-4 md:px-6">
+    <section className="pt-32 md:pt-40 pb-16 md:pb-22 text-center px-4 md:px-6">
       <RevealOnScroll>
         {/* text-4xl για κινητά ώστε να μην "σπάει" το όνομα σε 3 σειρές */}
         <h1 className="text-4xl md:text-6xl font-semibold tracking-tight animate-float leading-tight">
@@ -20,14 +20,14 @@ export default function Hero({ t, handleScroll }: any) {
             <a 
               href="#projects" 
               onClick={handleScroll} 
-              className="w-full md:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-xl font-medium transform transition-all duration-300 hover:scale-105 shadow-lg shadow-blue-500/10 text-center"
+              className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-medium transition-all text-sm md:text-base text-center"
             >
               {t.btnProjects}
             </a>
             <a 
               href="#contact" 
               onClick={handleScroll} 
-              className="w-full md:w-auto px-10 py-4 border border-gray-700 hover:border-blue-500 rounded-xl transform transition-all duration-300 hover:scale-105 text-center"
+              className="w-full sm:w-auto border border-gray-700 hover:border-blue-500 text-white px-8 py-3 rounded-xl font-medium transition-all text-sm md:text-base text-center"
             >
               {t.btnContact}
             </a>
