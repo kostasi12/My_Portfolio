@@ -10,7 +10,7 @@ export default function Navbar({ t, lang, setLang, handleScroll }: Navbar) {
     <nav className="fixed top-0 w-full bg-gray-950/80 backdrop-blur-lg border-b border-gray-800 z-50">
       <div className="max-w-6xl mx-auto px-4 py-3 sm:py-4 flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-y-3">
         
-        {/* Λογότυπο */}
+        {/* Logo */}
         <div className="text-white font-bold text-lg tracking-tighter">
           My<span className="text-blue-300">Portfolio</span>
         </div>
