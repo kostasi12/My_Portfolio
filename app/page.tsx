@@ -127,7 +127,7 @@ const translations = {
 
 export default function Home() {
   /* Ξεκινάμε πάντα με μια σταθερή τιμή για να συμφωνούν server και client */
-  const [lang, setLang] = useState<'en' | 'el'>('en');
+  const [lang, setLang] = useState<'en' | 'el'>('el');
   const [mounted, setMounted] = useState(false);
 
   /* Μόλις φορτώσει η σελίδα (mounted), διαβάζουμε το localStorage */
