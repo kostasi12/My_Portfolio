@@ -2,7 +2,7 @@ import { RevealOnScroll } from "./RevealOnScroll";
 
 export default function Projects({ t }: any) {
   return (
-    <section id="projects" className="py-28 px-6 max-w-6xl mx-auto text-center">
+    <section id="projects" className="py-16 px-6 max-w-6xl mx-auto text-center">
       {/* Εδώ χρησιμοποιούμε το t.title από το αντικείμενο translations */}
       <h2 className="text-4xl font-semibold mb-12 tracking-tight">
         {t.title}
