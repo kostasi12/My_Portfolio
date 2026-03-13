@@ -23,33 +23,49 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; /* Αποφεύγει το κούνημα δεξιά-αριστερά στο κινητό */
 }
 
 /* Floating animation για hero title */
 @keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
-/* Optional scrollbar styling */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #0a0a0a;
-}
-
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
 ::-webkit-scrollbar-thumb {
   background: #456da7;
   border-radius: 10px;
+}
+
+/* --- ΔΙΟΡΘΩΣΗ ΓΙΑ ΚΙΝΗΤΑ (RESPONSIVE) --- */
+
+@media (max-width: 768px) {
+  /* Διόρθωση Navbar: Επιτρέπει στα στοιχεία να αλλάξουν γραμμή αν δεν χωράνε */
+  nav, .nav-container {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    padding: 10px !important;
+  }
+
+  nav a, .nav-link {
+    font-size: 14px !important; /* Μικραίνει λίγο τα γράμματα στο μενού */
+    padding: 5px 8px !important;
+  }
+
+  /* Διόρθωση για τις κάρτες: Να μην κολλάνε στις άκρες της οθόνης */
+  section, .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* Αν οι κάρτες σου είναι πολύ μεγάλες */
+  .card, div[class*="rounded-xl"] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 }
