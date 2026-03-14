@@ -13,7 +13,7 @@ export default function Projects({ t }: any) {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 text-left">
           {t.items.map((project: any, index: number) => (
             <RevealOnScroll key={index}>
-              <div className="bg-gray-900/50 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-all duration-300 flex flex-col justify-between h-full min-h-[220px] shadow-xl">
+              <div className="bg-gray-900/50 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-all duration-300 flex flex-col justify-between h-full min-h-[180px] shadow-xl">
                 <div>
                   <h3 className="text-xl font-semibold text-white">{project.title}</h3>
                   <p className="text-gray-400 mt-4 text-sm leading-relaxed">

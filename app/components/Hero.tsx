@@ -20,14 +20,14 @@ export default function Hero({ t, handleScroll }: any) {
             <a 
               href="#projects" 
               onClick={handleScroll} 
-              className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-medium transition-all text-sm md:text-base text-center"
+              className="w-fit mx-auto min-w-[180px] sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-medium transition-all text-sm md:text-base text-center"
             >
               {t.btnProjects}
             </a>
             <a 
               href="#contact" 
               onClick={handleScroll} 
-              className="w-full sm:w-auto border border-gray-700 hover:border-blue-500 text-white px-8 py-3 rounded-xl font-medium transition-all text-sm md:text-base text-center"
+              className="w-fit mx-auto min-w-[180px] sm:w-auto border border-gray-700 hover:border-blue-500 text-white px-8 py-3 rounded-xl font-medium transition-all text-sm md:text-base text-center"
             >
               {t.btnContact}
             </a>

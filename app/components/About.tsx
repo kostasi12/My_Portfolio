@@ -34,15 +34,15 @@ export default function About({ t }: any) {
               {Object.entries(t.categories).map(([key, value]: any) => (
                 <div 
                   key={key} 
-                  className="bg-gray-800/10 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-gray-800 hover:border-blue-500/50 transition-all duration-300 flex flex-col items-center group shadow-xl"
+                  className="bg-gray-800/10 backdrop-blur-sm p-4 md:p-8 rounded-3xl border border-gray-800 hover:border-blue-500/50 transition-all duration-300 flex flex-col items-center group shadow-xl"
                 >
                   <div className="group-hover:scale-110 transition-transform duration-300">
                     {icons[key]}
                   </div>
                   
-                  <h4 className="text-xl font-semibold text-white mb-3">{value}</h4>
+                  <h4 className="text-xl font-semibold text-white mb-2">{value}</h4>
                   
-                  <div className="text-gray-500 text-xs leading-relaxed tracking-wide whitespace-pre-line">
+                  <div className="text-gray-400 text-xs leading-relaxed tracking-wide whitespace-pre-line">
                     {key === 'backend' && (
                         <>Python • Django {"\n"} REST APIs • PostgreSQL</>
                     )}
