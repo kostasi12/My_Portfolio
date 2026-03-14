@@ -19,7 +19,7 @@ export default function Contact({ t }: any) {
               className="flex items-center gap-3 px-6 py-3 rounded-full bg-white/5 border border-white/10 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all duration-300 shadow-sm"
             >
               {/* Το εικονίδιο: Σταθερό μέγεθος, διακριτικό μπλε */}
-              <FiMail className="text-blue-400 text-lg md:text-xl transition-transform group-hover:scale-110" />
+              <FiMail className="text-blue-100 text-lg md:text-xl transition-transform group-hover:scale-110" />
               
               {/* Το Email: Κανονικό μέγεθος γραμματοσειράς */}
               <span className="text-base md:text-lg font-medium text-gray-200 group-hover:text-white transition-colors">
