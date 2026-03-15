@@ -27,7 +27,7 @@ export default function Hero({ t, handleScroll }: any) {
             <a 
               href="#contact" 
               onClick={handleScroll} 
-              className="w-fit min-w-[195px] border border-gray-700 hover:scale-105 text-white px-10 py-3 rounded-xl font-medium transition-all text-sm md:text-base text-center"
+              className="w-fit min-w-[195px] border border-gray-700 hover:border-blue-500 hover:scale-105 text-white px-10 py-3 rounded-xl font-medium transition-all duration-300 text-sm md:text-base text-center"
             >
               {t.btnContact}
             </a>

@@ -11,7 +11,7 @@ export default function About({ t }: any) {
   };
 
   return (
-    <section id="about" className="py-8 md:py-16 px-2 md:px-6 bg-gray-900/40">
+    <section id="about" className="py-8 md:py-16 px-2 md:px-6 bg-gray-900/10">
       <div className="max-w-5xl mx-auto">
         <RevealOnScroll>
           <div className="text-center mb-12 md:mb-20">
