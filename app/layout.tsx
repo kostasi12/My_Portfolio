@@ -7,10 +7,10 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Portfolio",
-};
+//export const metadata: Metadata = {
+//  title: "Portfolio",
+//  description: "Portfolio",
+//};
 
 export default function RootLayout({
   children,

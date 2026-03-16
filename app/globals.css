@@ -59,3 +59,18 @@ body {
     @apply transition-[transform,background-color] duration-300 hover:duration-0 hover:scale-105 active:scale-95;
   }
 }
+
+@layer base {
+  html {
+    /* Σταματάει το τρέμουλο των γραμματοσειρών κατά το scale */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  /* "Κλειδώνει" τα στοιχεία που έχουν transition για να μην πηδάνε */
+  * {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+}
