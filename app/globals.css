@@ -53,3 +53,9 @@ body {
   background: #456da7;
   border-radius: 10px;
 }
+
+@layer components {
+  .btn-smooth {
+    @apply transition-[transform,background-color] duration-300 hover:duration-0 hover:scale-105 active:scale-95;
+  }
+}

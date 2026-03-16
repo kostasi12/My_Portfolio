@@ -6,13 +6,13 @@ export default function About({ t }: any) {
   const icons: any = {
     backend: <DiPython className="text-4xl text-blue-500 mb-4" />,
     frontend: <DiReact className="text-4xl text-blue-500 mb-4" />,
-    ml: <FaBrain className="text-4xl text-blue-500 mb-4" />,
+    ml: <FaBrain className="text-3xl text-blue-500 mb-5" />,
     tools: <DiGit className="text-4xl text-blue-500 mb-4" />,
   };
 
   return (
     <section id="about" className="py-8 md:py-16 px-2 md:px-6 bg-gray-900/10">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         <RevealOnScroll>
           <div className="text-center mb-12 md:mb-20">
             <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-8 tracking-tight text-white">
@@ -34,7 +34,12 @@ export default function About({ t }: any) {
               {Object.entries(t.categories).map(([key, value]: any) => (
                 <div 
                   key={key} 
-                  className="bg-gray-800/10 backdrop-blur-sm p-4 md:p-8 rounded-3xl border border-gray-800 hover:border-blue-500/50 transition-all duration-300 flex flex-col items-center group shadow-xl"
+                  /* ΔΙΟΡΘΩΣΗ: Αλλάζουμε το transition-all σε transition-[background-color,transform]
+                     και προσθέτουμε hover:duration-0 για να μην τρεμοπαίζει το border */
+                  className="bg-gray-800/10 backdrop-blur-sm p-4 md:p-8 rounded-3xl border border-gray-800 
+                             hover:border-blue-500/50 hover:duration-0 
+                             transition-[background-color,transform] duration-300 
+                             flex flex-col items-center group shadow-xl"
                 >
                   <div className="group-hover:scale-110 transition-transform duration-300">
                     {icons[key]}
