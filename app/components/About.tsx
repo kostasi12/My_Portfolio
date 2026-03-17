@@ -11,10 +11,15 @@ export default function About({ t }: any) {
   };
 
   return (
-    <section id="about" className="py-8 md:py-16 px-2 md:px-6 bg-gray-900/10">
+    /* Αφαιρούμε το px-4/6 από το section για να ελέγξουμε τα padding εσωτερικά
+    py-4 md:py-10 bg-gray-900/20 (ebala anti pt-2 py-6) */
+    <section id="about" className="relative z-10 py-6 pb-10 md:pt-12 md:pb-14 px-0 bg-gray-900/25 overflow-hidden">
       <div className="max-w-3xl mx-auto">
+        
+        {/* ΚΕΙΜΕΝΟ ABOUT */}
         <RevealOnScroll>
-          <div className="text-center mb-12 md:mb-20">
+          {/* Χρησιμοποιούμε px-4 για να έχει η παράγραφος μέγιστο πλάτος στο κινητό */}
+          <div className="text-center mb-10 md:mb-14 px-4">
             <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-8 tracking-tight text-white">
               {t.title}
             </h2>
@@ -24,21 +29,20 @@ export default function About({ t }: any) {
           </div>
         </RevealOnScroll>
 
+        {/* ΕΝΟΤΗΤΑ: SKILLS */}
         <RevealOnScroll>
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-8 md:mb-12 tracking-tight text-white">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-8 tracking-tight text-white">
               {t.skillsTitle}
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {/* Εδώ βάζουμε px-6 για να ευθυγραμμίζονται οι κάρτες με τις άλλες ενότητες του κινητού */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto px-6 md:px-0">
               {Object.entries(t.categories).map(([key, value]: any) => (
                 <div 
                   key={key} 
-                  /* ΔΙΟΡΘΩΣΗ: Αλλάζουμε το transition-all σε transition-[background-color,transform]
-                     και προσθέτουμε hover:duration-0 για να μην τρεμοπαίζει το border */
-                  className="bg-gray-800/10 backdrop-blur-sm p-4 md:p-8 rounded-3xl border border-gray-800 
-                             hover:border-blue-500/50 hover:duration-0 
-                             transition-[background-color,transform] duration-300 
+                  className="bg-gray-800/10 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-gray-800 
+                             hover:border-blue-500/50 transition-all duration-300 
                              flex flex-col items-center group shadow-xl"
                 >
                   <div className="group-hover:scale-110 transition-transform duration-300">
@@ -47,7 +51,7 @@ export default function About({ t }: any) {
                   
                   <h4 className="text-xl font-semibold text-white mb-2">{value}</h4>
                   
-                  <div className="text-gray-400 text-xs leading-relaxed tracking-wide whitespace-pre-line">
+                  <div className="text-gray-400 text-xs leading-relaxed tracking-wide whitespace-pre-line text-center">
                     {key === 'backend' && (
                         <>Python • Django {"\n"} REST APIs • PostgreSQL</>
                     )}

@@ -2,9 +2,11 @@ import { RevealOnScroll } from "./RevealOnScroll";
 
 export default function Experience({ t }: any) {
   return (
-    <section id="experience" className="py-8 md:py-10 px-6 bg-gray-900/40">
+    /* pb-12 md:py-14 text-center px-4 md:px-6  className="relative z-10 pt-6 pb-20 md:pt-10 md:pb-14 px-4 bg-gray-900/40 overflow-hidden  
+    pb-4 md:py-14 px-4 bg-gray-900/20*/
+    <section id="experience" className="relative z-10 pt-6 pb-10 md:pt-10 md:pb-14 px-6 bg-gray-900/20 overflow-hidden">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-12 tracking-tight text-white">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-10 tracking-tight text-white">
           {t.title}
         </h2>
         
@@ -21,7 +23,7 @@ export default function Experience({ t }: any) {
                   {t.job1.title}
                 </h3>
               </div>
-              <p className="text-gray-400 mt-3 text-sm md:text-base leading-relaxed">
+              <p className="text-gray-400 mt-2 text-sm md:text-base leading-relaxed">
                 {t.job1.desc}
               </p>
             </div>
@@ -36,7 +38,7 @@ export default function Experience({ t }: any) {
                   {t.job2.title}
                 </h3>
               </div>
-              <p className="text-gray-400 mt-3 text-sm md:text-base leading-relaxed">
+              <p className="text-gray-400 mt-2 text-sm md:text-base leading-relaxed">
                 {t.job2.desc}
               </p>
             </div>
