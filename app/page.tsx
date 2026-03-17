@@ -66,7 +66,7 @@ const translations = {
     },
     contact: { 
       title: "Contact",
-      subtitle: "Open to opportunities for collaboration, internships, and new challenges in the tech industry."  
+      subtitle: "Open to opportunities for collaboration and new challenges in the tech industry."  
     }
   },
   el: {
@@ -126,7 +126,7 @@ const translations = {
     },
     contact: { 
       title: "Επικοινωνία",
-      subtitle: "Ανοιχτός σε ευκαιρίες συνεργασίας, πρακτικής άσκησης και νέες προκλήσεις στον χώρο της τεχνολογίας."  
+      subtitle: "Ανοιχτός σε ευκαιρίες συνεργασίας και σε νέες προκλήσεις στον χώρο της τεχνολογίας."  
     }
   }
 };
