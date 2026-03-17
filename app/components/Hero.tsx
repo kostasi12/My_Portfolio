@@ -3,7 +3,7 @@ import { RevealOnScroll } from "./RevealOnScroll";
 export default function Hero({ t, handleScroll }: any) {
   return (
     /* pt-32 στο κινητό, pt-40 στον υπολογιστή για σωστό spacing από το navbar */
-    <section className="pt-32 md:pt-34 pb-12 md:py-14 text-center px-4 md:px-6">
+    <section className="pt-32 md:pt-36 pb-12 md:py-14 text-center px-4 md:px-6">
       <RevealOnScroll>
         {/* Επικεφαλίδα με antialiased για καθαρά γράμματα */}
         <h1 className="text-4xl md:text-6xl font-semibold tracking-tight animate-float leading-tight text-white antialiased">

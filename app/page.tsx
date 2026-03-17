@@ -19,7 +19,7 @@ const translations = {
     },
     about: {
       title: "About Me",
-      text: "I am an undergraduate Electrical & Computer Engineering student at AUTH, focusing on software development, backend systems, and machine learning, while also maintaining an interest in frontend development, UI/UX design and mobile application development.",
+      text: "Final-year Electrical & Computer Engineering student at Aristotle University of Thessaloniki, focused on software development, backend systems, and machine learning, with a strong interest in frontend development, UI/UX design and mobile application development.",
       skillsTitle: "Skills",
       categories: {
         backend: "Backend",
@@ -64,7 +64,10 @@ const translations = {
         }
       ]
     },
-    contact: { title: "Contact" }
+    contact: { 
+      title: "Contact",
+      subtitle: "Open to opportunities for collaboration, internships, and new challenges in the tech industry."  
+    }
   },
   el: {
     nav: { about: "Σχετικά", exp: "Εμπειρία", proj: "Projects", cont: "Επικοινωνία" },
@@ -76,7 +79,7 @@ const translations = {
     },
     about: {
       title: "Σχετικά με εμένα",
-      text: "Είμαι προπτυχιακός φοιτητής Ηλεκτρολόγων Μηχανικών & Μηχανικών Υπολογιστών στο ΑΠΘ με εστίαση στην ανάπτυξη λογισμικού, σε συστήματα backend και machine learning, διαθέτοντας παράλληλα ενδιαφέρον για το frontend development, τον σχεδιασμό UI/UX και ανάπτυξη mobile εφαρμογών.",
+      text: "Τελειόφοιτος φοιτητής Ηλεκτρολόγων Μηχανικών & Μηχανικών Υπολογιστών στο Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης με έμφαση στην ανάπτυξη λογισμικού, σε συστήματα backend και machine learning, καθώς και ιδιαίτερο ενδιαφέρον για frontend development, σχεδιασμό UI/UX και ανάπτυξη mobile εφαρμογών.",
       skillsTitle: "Δεξιότητες",
       categories: {
         backend: "Backend",
@@ -121,16 +124,17 @@ const translations = {
         }
       ]
     },
-    contact: { title: "Επικοινωνία" }
+    contact: { 
+      title: "Επικοινωνία",
+      subtitle: "Ανοιχτός σε ευκαιρίες συνεργασίας, πρακτικής άσκησης και νέες προκλήσεις στον χώρο της τεχνολογίας."  
+    }
   }
 };
 
 export default function Home() {
-  /* Ξεκινάμε πάντα με μια σταθερή τιμή για να συμφωνούν server και client */
   const [lang, setLang] = useState<'en' | 'el'>('el');
   const [mounted, setMounted] = useState(false);
 
-  /* Μόλις φορτώσει η σελίδα (mounted), διαβάζουμε το localStorage */
   useEffect(() => {
     const saved = localStorage.getItem("lang");
     if (saved === "en" || saved === "el") {
@@ -139,16 +143,16 @@ export default function Home() {
     setMounted(true);
   }, []);
 
-  /* Κάθε φορά που αλλάζει το lang, το αποθηκεύουμε */
   useEffect(() => {
     if (mounted) {
       localStorage.setItem("lang", lang);
+      //  Αλλάζει το lang του html tag δυναμικά
+      document.documentElement.lang = lang;
     }
   }, [lang, mounted]);
 
   const t = translations[lang];
 
-  /* Αν δεν έχει γίνει ακόμα το mount, μπορούμε να επιστρέψουμε ένα απλό div */
   if (!mounted) {
     return <div className="min-h-screen bg-gray-950"></div>; 
   }
@@ -175,7 +179,6 @@ export default function Home() {
 
       <Hero t={t.hero} handleScroll={handleScroll} />
 
-      {/* Διαχωριστικό 1 */}
       <div className="flex justify-center">
         <div className="w-full max-w-[1000px] px-6">
           <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
@@ -184,23 +187,19 @@ export default function Home() {
 
       <About t={t.about} />
 
-      {/* Διαχωριστικό 2 */}
       <div className="flex justify-center">
         <div className="w-full max-w-[1000px] px-6">
           <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
         </div>
       </div>
      
-      {/* Section Experience με ελαφρύ background block */}
       <div className="bg-blue-100/0">
         <Experience t={t.experience} />
       </div>
       
-      {/* Divider */}
       <div className="relative">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-100/10 to-transparent h-20"></div>
         
-        {/* Εφέ που σβήνει το background του Experience */}
         <div className="flex justify-center">
           <div className="w-full max-w-[1000px] px-6"> 
             <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
@@ -210,14 +209,14 @@ export default function Home() {
 
       <Projects t={t.projects} />
        
-       {/* Διαχωριστικό 4 */}
       <div className="flex justify-center">
         <div className="w-full max-w-[1000px] px-6">
           <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
         </div>
       </div>
 
-      <Contact t={t.contact} />
+      {/* Προσθήκη lang prop για να ξέρει το Contact τι γλώσσα έχεις */}
+      <Contact t={t.contact} lang={lang} />
 
       <Footer />
 

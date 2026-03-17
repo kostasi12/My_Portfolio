@@ -30,7 +30,7 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
               key={link.id}
               href={link.id} 
               onClick={handleScroll} 
-              /* Αλλαγή: px-1 στο mobile για να κερδίσουμε χώρο */
+              /* Αλλαγή px-1 στο mobile για να κερδίσουμε χώρο */
               className="group relative px-1 md:px-2 py-1 text-gray-300 hover:text-white transition-colors duration-300 shrink-0"
             >
               <span className="relative block transform-gpu transition-transform duration-300 ease-out group-hover:scale-105 will-change-transform">
