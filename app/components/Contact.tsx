@@ -11,7 +11,7 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
         
         {/* Section Header */}
         <RevealOnScroll>
-          <div className="text-center mb-16 text-balance">
+          <div className="text-center mb-12 md:mb-14 text-balance">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-white mb-4 antialiased">
               {t.title}
             </h2>
@@ -24,7 +24,7 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
 
         {/* 1. Σταθερό Label - Start a conversation */}
         {/* ΑΛΛΑΓΗ: text-slate-500 */}
-        <p className="mb-2 text-[9px] md:text-[10px] text-slate-500 uppercase tracking-[0.3em] font-bold">
+        <p className="mb-3 md:mb-4 text-[9px] md:text-[10px] text-slate-500 uppercase tracking-[0.3em] font-bold">
           Start a conversation
         </p>
 
@@ -43,16 +43,24 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
 
             {/* Email Text - Γίνεται ΛΕΥΚΟ */}
             {/* ΑΛΛΑΓΗ: text-slate-400 αρχικό χρώμα */}
-            <span className="text-lg md:text-3xl font-light text-slate-400 group-hover:text-white transition-all duration-500 tracking-tight antialiased select-none">
+            <span className="text-lg md:text-[2rem] font-light text-slate-400 group-hover:text-white transition-all duration-500 tracking-tight antialiased select-none">
               {email}
             </span>
 
             {/* Arrow Icon ΜΕΣΑ ΣΕ ΚΥΚΛΟ - Εμφανίζεται με slide effect */}
-            <div className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 
-                            flex items-center justify-center w-8 h-8 rounded-full 
-                            bg-blue-500/5 border border-blue-500/40 ml-1">
-              <ArrowUpRight size={20} className="text-blue-500" strokeWidth={1.5} />
-            </div>
+            <div className="flex items-center justify-center w-8 h-8 rounded-full ml-0
+             border border-slate-600/40 bg-white/[0.01]
+             transition-all duration-500 
+             group-hover:border-blue-500/60
+             group-hover:bg-blue-500/0
+             group-hover:scale-105"
+>
+  <ArrowUpRight
+    size={18}
+    className="text-slate-400 transition-colors duration-500 group-hover:text-blue-500"
+    strokeWidth={1.5}
+  />
+</div>
           </a>
         </RevealOnScroll>
 
@@ -60,7 +68,7 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
         <div className="mt-12 flex flex-col items-center gap-3">
           <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-slate-700/50 to-transparent"></div>
           {/* ΑΛΛΑΓΗ: text-slate-600 */}
-          <span className="text-[10px] text-slate-600 tracking-[0.16em] uppercase font-bold">
+          <span className="text-[11px] md:text-[12px] text-slate-400 uppercase tracking-[0.16em] font-medium max-w-md mx-auto opacity-80 leading-relaxed">
             Thessaloniki, Greece
           </span>
         </div>
