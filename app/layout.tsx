@@ -34,8 +34,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-gray-950 text-gray-100 antialiased selection:bg-blue-500/30`}>
-        {/* Προσθέτουμε ένα wrapper div με σταθερό rendering */}
+      {/* Αφαιρούμε το bg-gray-950, αφήνουμε μόνο το antialiased */}
+      <body className={`${inter.className} text-gray-100 antialiased selection:bg-blue-500/30`}>
         <div className="relative tracking-tight">
           {children}
         </div>

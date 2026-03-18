@@ -17,9 +17,10 @@ export default function Projects({ t }: any) {
   ];
 
   return ( 
-    <section id="projects" className="relative z-10 pt-6 pb-10 md:pt-10 md:pb-14 px-6 bg-gray-900/10 overflow-hidden"> 
+    /* Φόντο slate-950 για ομοιομορφία με το Experience */
+    <section id="projects" className="relative z-10 pt-6 pb-10 md:pt-10 md:pb-14 px-6 bg-slate-950/80 overflow-hidden"> 
       
-      <div className="max-w-5xl mx-auto text-center"> 
+      <div className="max-w-6xl mx-auto text-center"> 
         
         <RevealOnScroll>
           <div className="mb-6 md:mb-8">
@@ -37,16 +38,16 @@ export default function Projects({ t }: any) {
             >
               <RevealOnScroll>
                 <div className="h-full w-full flex flex-col">
-                  <div className="bg-gray-800/10 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-gray-800 
+                  {/* ΑΛΛΑΓΗ bg-slate-900/50 για ομοιομορφία με τις κάρτες του Experience */}
+                  <div className="bg-slate-900/40 p-6 md:p-8 rounded-3xl border border-slate-800 
                                   hover:border-blue-500/50 hover:duration-0 
                                   transition-[transform,background-color] duration-300 
-                                  flex flex-col items-center h-full shadow-xl text-center w-full group">
+                                  flex flex-col items-center h-full text-center w-full group relative">
                     
                     <div className="group-hover:scale-110 transition-transform duration-300">
                       {projectIcons[index]}
                     </div>
 
-                    {/* Η ρύθμιση για το κενό στο Mobile */}
                     <div className="h-[35px] md:h-[50px] flex items-center justify-center mb-1">
                       <h3 className="text-lg md:text-xl font-semibold text-white leading-tight px-0">
                         {project.title}
@@ -54,7 +55,8 @@ export default function Projects({ t }: any) {
                     </div>
 
                     <div className="flex-1 mt-0">
-                      <p className="text-gray-400 text-sm md:text-base leading-relaxed">
+                      {/* text-slate-400 για καθαρή αντίθεση πάνω στο σκούρο μπλε */}
+                      <p className="text-slate-400 text-sm md:text-base leading-relaxed">
                         {project.desc}
                       </p>
                     </div>
