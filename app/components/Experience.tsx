@@ -25,7 +25,7 @@ export default function Experience({ t }: any) {
                 </h3>
               </div>
               {/* text-slate-400 για καθαρότητα στο κείμενο */}
-              <p className="text-slate-400 mt-3 text-sm md:text-base leading-relaxed">
+              <p className="text-slate-400 mt-2 text-sm md:text-base leading-relaxed">
                 {t.job1.desc}
               </p>
             </div>
