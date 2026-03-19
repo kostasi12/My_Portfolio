@@ -19,7 +19,7 @@ export default function About({ t }: any) {
         <RevealOnScroll>
           <div className="text-center mb-10 md:mb-14 px-8">
             {/* ΔΙΟΡΘΩΣΗ: mb-4 στο κινητό για να έρθει πιο κοντά το κείμενο */}
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4 md:mb-8 tracking-tight text-white antialiased">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-8 tracking-tight text-white antialiased">
               {t.title}
             </h2>
             
