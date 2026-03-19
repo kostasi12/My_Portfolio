@@ -16,16 +16,16 @@ export default function Experience({ t }: any) {
           {/* JOB 1 */}
           <RevealOnScroll>
             {/* ΑΛΛΑΓΗ: bg-slate-900/50 για να φαίνεται η κάρτα ελαφρώς πιο ανοιχτή από το φόντο */}
-            <div className="bg-slate-900/40 p-6 md:p-8 rounded-3xl border border-slate-800 
+            <div className="bg-slate-900/40 p-5 md:p-8 rounded-3xl border border-slate-800 
                             hover:border-blue-500/50 hover:duration-0 
                             transition-all duration-300 h-full text-center group">
-              <div className="h-[40px] flex items-center justify-center mb-2">
+              <div className="h-[40px] flex items-center justify-center mb-1">
                 <h3 className="text-lg md:text-xl font-semibold text-white leading-snug">
                   {t.job1.title}
                 </h3>
               </div>
               {/* text-slate-400 για καθαρότητα στο κείμενο */}
-              <p className="text-slate-400 mt-2 text-sm md:text-base leading-relaxed">
+              <p className="text-slate-400 mt-3 text-sm md:text-base leading-relaxed">
                 {t.job1.desc}
               </p>
             </div>
@@ -34,7 +34,7 @@ export default function Experience({ t }: any) {
           {/* JOB 2 */}
           <RevealOnScroll>
             {/* ΑΛΛΑΓΗ: bg-slate-900/50 για ομοιομορφία με την πρώτη κάρτα */}
-            <div className="bg-slate-900/40 p-6 md:p-8 rounded-3xl border border-slate-800 
+            <div className="bg-slate-900/40 p-5 md:p-8 rounded-3xl border border-slate-800 
                             hover:border-blue-500/50 hover:duration-0 
                             transition-all duration-300 h-full text-center group">
               <div className="h-[40px] flex items-center justify-center mb-2">
