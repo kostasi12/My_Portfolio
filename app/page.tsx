@@ -168,7 +168,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-gray-100 leading-relaxed scroll-smooth">
+    <main className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-950 to-gray-950 text-gray-100 leading-relaxed scroll-smooth">
 
       <Navbar
         t={t.nav}
@@ -179,6 +179,7 @@ export default function Home() {
 
       <Hero t={t.hero} handleScroll={handleScroll} />
 
+      {/* 1. Γραμμή Πριν το About */}
       <div className="flex justify-center">
         <div className="w-full max-w-[1000px] px-6">
           <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
@@ -187,35 +188,32 @@ export default function Home() {
 
       <About t={t.about} />
 
+      {/* 2. Γραμμή Πριν την Εμπειρία */}
       <div className="flex justify-center">
         <div className="w-full max-w-[1000px] px-6">
-          <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
+          <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-blue-300/50 to-transparent animate-pulse"></div>
         </div>
       </div>
-     
-      <div className="bg-blue-100/0">
-        <Experience t={t.experience} />
-      </div>
       
-      <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-100/10 to-transparent h-20"></div>
-        
-        <div className="flex justify-center">
-          <div className="w-full max-w-[1000px] px-6"> 
-            <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
-          </div>
+      {/* Το Experience είναι τώρα μόνο του, χωρίς το μπλε div wrapper */}
+      <Experience t={t.experience} />
+      
+      {/* 3. Γραμμή Πριν τα Projects */}
+      <div className="flex justify-center">
+        <div className="w-full max-w-[1000px] px-6"> 
+          <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
         </div>
       </div>
 
       <Projects t={t.projects} />
        
+      {/* 4. Γραμμή Πριν το Contact */}
       <div className="flex justify-center">
         <div className="w-full max-w-[1000px] px-6">
           <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
         </div>
       </div>
 
-      {/* Προσθήκη lang prop για να ξέρει το Contact τι γλώσσα έχεις */}
       <Contact t={t.contact} lang={lang} />
 
       <Footer />

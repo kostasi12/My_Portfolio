@@ -18,7 +18,7 @@ export default function Projects({ t }: any) {
 
   return ( 
     /* Φόντο slate-950 για ομοιομορφία με το Experience */
-    <section id="projects" className="relative z-10 pt-6 pb-10 md:pt-10 md:pb-14 px-6 bg-slate-950/80 overflow-hidden"> 
+    <section id="projects" className="relative z-10 pt-6 pb-10 md:pt-10 md:pb-14 px-6 bg-slate-950/60 overflow-hidden"> 
       
       <div className="max-w-6xl mx-auto text-center"> 
         

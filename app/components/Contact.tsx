@@ -6,17 +6,17 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
 
   return (
     /* ΑΛΛΑΓΗ: bg-slate-900 για το "ανοιχτό" μπλε φόντο που δένει με το Hero/About */
-    <section id="contact" className="relative z-10 pt-12 pb-10 px-4 bg-slate-950/40 overflow-hidden">
+    <section id="contact" className="relative z-10 pt-10 pb-10 px-4 bg-slate-950/40 overflow-hidden">
       <div className="max-w-4xl mx-auto flex flex-col items-center">
         
         {/* Section Header */}
         <RevealOnScroll>
-          <div className="text-center mb-12 md:mb-14 text-balance">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-white mb-4 antialiased">
+          <div className="text-center mb-12 md:mb-16 text-balance">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-white mb-6 antialiased">
               {t.title}
             </h2>
             {/* ΑΛΛΑΓΗ: text-slate-400 για να ταιριάζει με το νέο φόντο */}
-            <p className="text-[10px] md:text-[11px] text-slate-400 uppercase tracking-[0.2em] font-medium max-w-sm mx-auto opacity-70">
+            <p className="text-[10px] md:text-[11px] text-slate-400 uppercase tracking-[0.18em] font-medium max-w-sm mx-auto opacity-70">
               {t.subtitle}
             </p>
           </div>
@@ -24,7 +24,7 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
 
         {/* 1. Σταθερό Label - Start a conversation */}
         {/* ΑΛΛΑΓΗ: text-slate-500 */}
-        <p className="mb-3 md:mb-4 text-[9px] md:text-[10px] text-slate-500 uppercase tracking-[0.3em] font-bold">
+        <p className="mb-3 md:mb-4 text-[9px] md:text-[10px] text-slate-500 uppercase tracking-[0.4em] font-bold">
           Start a conversation
         </p>
 
@@ -68,7 +68,7 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
         <div className="mt-12 flex flex-col items-center gap-3">
           <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-slate-700/50 to-transparent"></div>
           {/* ΑΛΛΑΓΗ: text-slate-600 */}
-          <span className="text-[11px] md:text-[12px] text-slate-400 uppercase tracking-[0.16em] font-medium max-w-md mx-auto opacity-80 leading-relaxed">
+          <span className="text-[10px] md:text-[11px] text-slate-500 uppercase tracking-[0.4em] font-medium max-w-md mx-auto opacity-80 leading-relaxed">
             Thessaloniki, Greece
           </span>
         </div>

@@ -8,9 +8,9 @@ interface NavbarProps {
 export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) {
   return (
     /* ΑΛΛΑΓΗ: bg-slate-900/80 αντί για gray-950 και border-slate-800 για ομοιομορφία */
-    <nav className="fixed top-0 w-full bg-slate-950 border-b border-slate-800 z-50">
-      <div className="max-w-6xl mx-auto px-3 md:px-8 py-4 flex justify-between items-center">
-        
+    <nav className="fixed top-0 w-full bg-slate-950/40 backdrop-blur-2xl border-b border-slate-800 z-50">
+      <div className="max-w-6xl mx-auto px-3 md:px-8 py-3 flex justify-between items-center">
+
         {/* Logo */}
         <div className="text-white font-bold text-base md:text-lg tracking-tighter shrink-0">
           My<span className="text-blue-300">Portfolio</span>
