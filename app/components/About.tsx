@@ -26,7 +26,7 @@ export default function About({ t }: any) {
             {/* ΑΛΛΑΓΗ: text-slate-400 για ομοιομορφία */}
             {/* ΠΡΟΣΘΗΚΗ: text-center (mobile) και md:text-justify (desktop) για καλύτερη στοίχιση */}
             {/* ΡΥΘΜΙΣΗ ΑΠΟΣΤΑΣΗΣ: Άλλαξε το mt-4 για να φέρεις το κείμενο πιο κοντά ή πιο μακριά από τον τίτλο */}
-            <p className="text-slate-400 text-base md:text-lg leading-relaxed mx-auto text-center max-w-[360px] md:max-w-3xl -mt-2 md:mt-0">
+            <p className="text-slate-400 text-base md:text-lg leading-relaxed mx-auto text-center max-w-[380px] md:max-w-3xl -mt-2 md:mt-0">
               {t.text}
             </p>
           </div>
