@@ -21,7 +21,7 @@ export default function Experience({ t }: any) {
                             transition-all duration-300 h-full text-center group flex flex-col">
               
               {/* ΔΙΟΡΘΩΣΗ: items-start για να ξεκινούν οι τίτλοι από το ίδιο ύψος στο mobile */}
-              <div className="md:h-[60px] flex items-start justify-center mb-1">
+              <div className="md:h-[60px] flex items-start justify-center -mb-6">
                 <h3 className="text-lg md:text-xl font-semibold text-white leading-snug">
                   {t.job1.title}
                 </h3>
@@ -41,7 +41,7 @@ export default function Experience({ t }: any) {
                             transition-all duration-300 h-full text-center group flex flex-col">
               
               {/* ΔΙΟΡΘΩΣΗ: Αφαιρέθηκε το h-[40px] που δημιουργούσε το κενό στο "Diploma Thesis" */}
-              <div className="md:h-[60px] flex items-start justify-center mb-1">
+              <div className="md:h-[60px] flex items-start justify-center -mb-6">
                 <h3 className="text-lg md:text-xl font-semibold text-white leading-snug">
                   {t.job2.title}
                 </h3>
