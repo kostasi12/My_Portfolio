@@ -25,7 +25,7 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
         {/* 1. Σταθερό Label - Start a conversation */}
         {/* ΑΛΛΑΓΗ: text-slate-500 */}
         <p className="mb-3 md:mb-4 text-[9px] md:text-[10px] text-slate-500 uppercase tracking-[0.4em] font-bold">
-          Start a conversation
+          {lang === 'el' ? 'Ξεκινήστε μια συζήτηση' : 'Start a conversation'}
         </p>
 
         {/* 2. Διαδραστικό Email Group - Με Κύκλο στο Βέλος */}
@@ -69,7 +69,7 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
           <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-slate-700/50 to-transparent"></div>
           {/* ΑΛΛΑΓΗ: text-slate-600 */}
           <span className="text-[10px] md:text-[11px] text-slate-500 uppercase tracking-[0.4em] font-medium max-w-md mx-auto opacity-80 leading-relaxed">
-            Thessaloniki, Greece
+            {lang === 'el' ? 'Θεσσαλονίκη, Ελλάδα' : 'Thessaloniki, Greece'}
           </span>
         </div>
       </div>

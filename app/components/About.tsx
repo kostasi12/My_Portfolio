@@ -17,12 +17,16 @@ export default function About({ t }: any) {
         
         {/* ΚΕΙΜΕΝΟ ABOUT */}
         <RevealOnScroll>
-          <div className="text-center mb-10 md:mb-14 px-4">
+
+          {/* ΠΡΟΣΘΗΚΗ: px-6 για να μην κολλάει το κείμενο στις άκρες στο mobile */}
+          <div className="text-center mb-10 md:mb-14 px-6">
             <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-8 tracking-tight text-white">
               {t.title}
             </h2>
             {/* ΑΛΛΑΓΗ: text-slate-400 για ομοιομορφία */}
-            <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-3xl mx-auto text-left md:text-justify">
+            {/* ΠΡΟΣΘΗΚΗ: text-center (mobile) και md:text-justify (desktop) για καλύτερη στοίχιση */}
+            {/* ΡΥΘΜΙΣΗ ΑΠΟΣΤΑΣΗΣ: Άλλαξε το mt-4 για να φέρεις το κείμενο πιο κοντά ή πιο μακριά από τον τίτλο */}
+            <p className="text-slate-400 text-base md:text-lg leading-relaxed mx-auto text-center max-w-[340px] md:max-w-3xl -mt-2 md:mt-0 [text-wrap:balance]">
               {t.text}
             </p>
           </div>
@@ -35,15 +39,17 @@ export default function About({ t }: any) {
               {t.skillsTitle}
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto px-6 md:px-0">
+            {/* ΠΡΟΣΘΗΚΗ: px-8 για να έρθουν οι κάρτες πιο μέσα στην οθόνη του κινητού */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto px-8 md:px-0">
               {Object.entries(t.categories).map(([key, value]: any) => (
                 /* ΑΛΛΑΓΗ: bg-slate-950 για τις κάρτες και border-slate-800. Αφαιρέθηκε το shadow/blur */
                 <div 
                   key={key} 
-                  className="bg-slate-900/40 p-6 md:p-8 rounded-3xl border border-slate-800 
-                             hover:border-blue-500/50 hover:duration-0 
-                             transition-[transform,background-color] duration-300 
-                             flex flex-col items-center group relative"
+                  /* ΠΡΟΣΘΗΚΗ: p-8 αντί για p-6 για να "αναπνέει" το περιεχόμενο μέσα στην κάρτα */
+                  className="bg-slate-900/40 p-8 rounded-3xl border border-slate-800 
+                               hover:border-blue-500/50 hover:duration-0 
+                               transition-[transform,background-color] duration-300 
+                               flex flex-col items-center group relative"
                 >
                   <div className="group-hover:scale-110 transition-transform duration-300">
                     {icons[key]}
