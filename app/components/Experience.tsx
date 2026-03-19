@@ -4,9 +4,9 @@ export default function Experience({ t }: any) {
   return (
     /* ΑΛΛΑΓΗ: bg-slate-950 για το πιο σκούρο μπλε φόντο. 
        Το border-t border-white/5 δημιουργεί μια διακριτική γραμμή διαχωρισμού md:pt-10 */
-    <section id="experience" className="relative z-10 pt-8 pb-10 md:pb-14 px-8 bg-slate-950/60 overflow-hidden">
+    <section id="experience" className="relative z-10 pt-6 pb-10 md:pb-14 px-8 bg-slate-950/60 overflow-hidden">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-10 tracking-tight text-white">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-4 mb-6 tracking-tight text-white">
           {t.title}
         </h2>
         

@@ -18,12 +18,12 @@ export default function Projects({ t }: any) {
 
   return ( 
     /* Φόντο slate-950 για ομοιομορφία με το Experience md:pt-10 */
-    <section id="projects" className="relative z-10 pt-8 pb-10 md:pb-14 px-8 bg-slate-950/60 overflow-hidden"> 
+    <section id="projects" className="relative z-10 pt-6 pb-10 md:pb-14 px-8 bg-slate-950/60 overflow-hidden"> 
       
       <div className="max-w-5xl mx-auto text-center"> 
         
         <RevealOnScroll>
-          <div className="mb-6 md:mb-8">
+          <div className="mb-4 md:mb-6">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white">
               {t.title}
             </h2>
