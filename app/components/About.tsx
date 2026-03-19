@@ -20,7 +20,7 @@ export default function About({ t }: any) {
 
           {/* ΠΡΟΣΘΗΚΗ: px-6 για να μην κολλάει το κείμενο στις άκρες στο mobile */}
           <div className="text-center mb-10 md:mb-14 px-6">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-8 tracking-tight text-white">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-6 tracking-tight text-white">
               {t.title}
             </h2>
             {/* ΑΛΛΑΓΗ: text-slate-400 για ομοιομορφία */}
