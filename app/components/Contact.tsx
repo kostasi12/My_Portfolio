@@ -23,8 +23,8 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
         </RevealOnScroll>
 
         {/* 1. Σταθερό Label - Start a conversation */}
-        {/* ΑΛΛΑΓΗ: text-slate-500 */}
-        <p className="mb-3 md:mb-4 text-[9px] md:text-[10px] text-slate-500 uppercase tracking-[0.4em] font-bold">
+        {/* ΑΛΛΑΓΗ: mb-3 md:mb-3 */}
+        <p className="mt-1 md:mt-2 mb-1 text-[9px] md:text-[10px] text-slate-500 uppercase tracking-[0.4em] font-bold">
           {lang === 'el' ? 'Ξεκινήστε μια συζήτηση' : 'Start a conversation'}
         </p>
 
@@ -37,37 +37,38 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
             {/* Mail Icon - Γίζεται ΜΠΛΕ στο hover */}
             <Mail
               size={22}
-              className="text-slate-600 group-hover:text-blue-500 transition-colors duration-500 shrink-0"
+              className="text-slate-500 group-hover:text-blue-500 transition-colors duration-500 shrink-0"
               strokeWidth={1.2}
             />
 
             {/* Email Text - Γίνεται ΛΕΥΚΟ */}
-            {/* ΑΛΛΑΓΗ: text-slate-400 αρχικό χρώμα */}
-            <span className="text-lg md:text-[2rem] font-light text-slate-400 group-hover:text-white transition-all duration-500 tracking-tight antialiased select-none">
+            {/* text-slate-400 αρχικό χρώμα */}
+            <span className="text-lg md:text-[1.5rem] font-light text-slate-400 group-hover:text-white transition-all duration-500 tracking-tight antialiased select-none">
               {email}
             </span>
 
             {/* Arrow Icon ΜΕΣΑ ΣΕ ΚΥΚΛΟ - Εμφανίζεται με slide effect */}
             <div className="flex items-center justify-center w-8 h-8 rounded-full ml-0
-             border border-slate-600/40 bg-white/[0.01]
-             transition-all duration-500 
-             group-hover:border-blue-500/60
+             border border-slate-500/60
+             transition-all duration-300 
+             group-hover:border-blue-500
              group-hover:bg-blue-500/0
-             group-hover:scale-105"
+             group-hover:scale-105
+             transform-gpu will-change-transform"
 >
   <ArrowUpRight
     size={18}
-    className="text-slate-400 transition-colors duration-500 group-hover:text-blue-500"
+    className="text-slate-400 transition-colors duration-300 group-hover:text-blue-400 transform-gpu"
     strokeWidth={1.5}
   />
 </div>
           </a>
         </RevealOnScroll>
 
-        {/* 3. Footer Detail */}
-        <div className="mt-12 flex flex-col items-center gap-3">
+        {/*  Footer Detail */}
+        <div className="mt-11 flex flex-col items-center gap-4">
           <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-slate-700/50 to-transparent"></div>
-          {/* ΑΛΛΑΓΗ: text-slate-600 */}
+          {/* text-slate-500 */}
           <span className="text-[10px] md:text-[11px] text-slate-500 uppercase tracking-[0.4em] font-medium max-w-md mx-auto opacity-80 leading-relaxed">
             {lang === 'el' ? 'Θεσσαλονίκη, Ελλάδα' : 'Thessaloniki, Greece'}
           </span>

@@ -5,7 +5,7 @@ export default function Hero({ t, handleScroll }: any) {
     /* pt-32 στο κινητό, pt-40 στον υπολογιστή για σωστό spacing από το navbar */
     /* ΑΛΛΑΓΗ: bg-slate-900 αντί για bg-black. Είναι το βαθύ μπλε που ζήτησες, 
        πιο ανοιχτό από το μαύρο αλλά χωρίς transparency για να μην κάνει "νερά" */
-    <section className="pt-32 md:pt-40 pb-12 md:py-14 text-center px-4 md:px-6 bg-slate-950/40 relative overflow-hidden">
+    <section className="pt-32 md:pt-38 pb-12 md:py-14 text-center px-4 md:px-6 bg-slate-950/40 relative overflow-hidden">
       <RevealOnScroll>
         {/* Επικεφαλίδα με antialiased για καθαρά γράμματα */}
         <h1 className="text-4xl md:text-6xl font-semibold tracking-tight animate-float leading-tight text-white antialiased">
