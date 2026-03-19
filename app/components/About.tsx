@@ -11,8 +11,8 @@ export default function About({ t }: any) {
   };
 
   return (
-    /* ΑΛΛΑΓΗ: bg-slate-900 για το "ανοιχτό" μπλε που ζήτησες αντί για το μαύρο ή το gray-900/15 */
-    <section id="about" className="relative z-10 py-6 pb-10 md:pt-10 md:pb-14 px-0 bg-slate-950/60 overflow-hidden">
+    /* ΑΛΛΑΓΗ: bg-slate-900 για το "ανοιχτό" μπλε που ζήτησες αντί για το μαύρο ή το gray-900/15 md:pt-10 */
+    <section id="about" className="relative z-10 pt-8 pb-10 md:pb-14 px-0 bg-slate-950/60 overflow-hidden">
       <div className="max-w-3xl mx-auto">
         
         {/* ΚΕΙΜΕΝΟ ABOUT */}

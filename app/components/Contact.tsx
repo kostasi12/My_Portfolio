@@ -6,7 +6,7 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
 
   return (
     /* ΑΛΛΑΓΗ: bg-slate-900 για το "ανοιχτό" μπλε φόντο που δένει με το Hero/About */
-    <section id="contact" className="relative z-10 pt-10 pb-10 px-4 bg-slate-950/40 overflow-hidden">
+    <section id="contact" className="relative z-10 pt-8 pb-10 px-4 bg-slate-950/40 overflow-hidden">
       <div className="max-w-4xl mx-auto flex flex-col items-center">
         
         {/* Section Header */}
