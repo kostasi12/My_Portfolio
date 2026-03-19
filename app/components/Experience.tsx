@@ -16,7 +16,7 @@ export default function Experience({ t }: any) {
           {/* JOB 1 */}
           <RevealOnScroll>
             {/* ΑΛΛΑΓΗ: bg-slate-900/50 για να φαίνεται η κάρτα ελαφρώς πιο ανοιχτή από το φόντο */}
-            <div className="bg-slate-900/40 p-5 md:p-8 rounded-3xl border border-slate-800 
+            <div className="bg-slate-900/40 p-8 md:p-8 rounded-3xl border border-slate-800 
                             hover:border-blue-500/50 hover:duration-0 
                             transition-all duration-300 h-full text-center group">
               <div className="h-[40px] flex items-center justify-center mb-1">
@@ -34,7 +34,7 @@ export default function Experience({ t }: any) {
           {/* JOB 2 */}
           <RevealOnScroll>
             {/* ΑΛΛΑΓΗ: bg-slate-900/50 για ομοιομορφία με την πρώτη κάρτα */}
-            <div className="bg-slate-900/40 p-5 md:p-8 rounded-3xl border border-slate-800 
+            <div className="bg-slate-900/40 p-6 md:p-8 rounded-3xl border border-slate-800 
                             hover:border-blue-500/50 hover:duration-0 
                             transition-all duration-300 h-full text-center group">
               <div className="h-[40px] flex items-center justify-center mb-2">
