@@ -12,7 +12,7 @@ const translations = {
   en: {
     nav: { about: "About", exp: "Experience", proj: "Projects", cont: "Contact" },
     hero: {
-      title: "Konstantinos Siampanis",
+      title: "Konstantinos Siampanis ",
       sub: "Electrical & Computer Engineer",
       btnProjects: "View Projects",
       btnContact: "Contact"
@@ -31,11 +31,13 @@ const translations = {
     experience: {
       title: "Experience",
       job1: {
-        title: "Backend Developer Intern – RealMINT",
+        role: "Backend Developer",
+        title: "Internship – RealMINT",
         desc: "Designed and implemented backend architecture using Python and Django. Developed RESTful APIs, integrated PostgreSQL databases, and contributed to iOS development using Swift."
       },
       job2: {
         title: "Diploma Thesis",
+        subtitle: "Software Evaluation & Upgrade",
         desc: "Evaluation and technical upgrade of Lightning Protection software. Designed and developed a modern UI/UX to enhance usability and user experience."
       }
     },
@@ -91,11 +93,13 @@ const translations = {
     experience: {
       title: "Επαγγελματική Εμπειρία",
       job1: {
-        title: "Backend Developer Intern – RealMINT",
+        role: "Backend Developer",
+        title: "Πρακτική Άσκηση – RealMINT",
         desc: "Σχεδιασμός και υλοποίηση backend αρχιτεκτονικής με Python και Django. Ανάπτυξη RESTful APIs, διαχείριση βάσεων PostgreSQL και συμμετοχή στο development iOS εφαρμογής με Swift."
       },
       job2: {
         title: "Διπλωματική Εργασία",
+        subtitle: "Αξιολόγηση & Αναβάθμιση Λογισμικού",
         desc: "Αξιολόγηση και τεχνική αναβάθμιση λογισμικού Αντικεραυνικής Προστασίας. Σχεδιασμός και ανάπτυξη UI/UX για τη βελτίωση της εμπειρίας του χρήστη."
       }
     },
