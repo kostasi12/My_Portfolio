@@ -132,7 +132,7 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
               key={link.id}
               href={link.id} 
               onClick={handleMobileClick}
-              className="text-xl font-medium text-slate-200 hover:text-blue-400 transition-colors border-b border-slate-800/50 pb-3"
+              className="text-xl font-medium text-slate-200 hover:text-blue-400 transition-colors border-b border-slate-800/80 pb-3"
             >
               {link.label}
             </a>
