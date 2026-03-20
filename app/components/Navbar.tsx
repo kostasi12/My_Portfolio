@@ -57,7 +57,7 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
       }`}
     >
       {/* ΑΛΛΑΓΗ: px-6 στο κινητό (αντί για px-3) για να έρθει πιο μέσα το περιεχόμενο */}
-      <div className="max-w-6xl mx-auto px-5 md:px-8 py-3 flex justify-between items-center">
+      <div className="max-w-6xl mx-auto px-6 md:px-8 py-3 flex justify-between items-center">
 
         {/* Logo */}
         {/* ΑΛΛΑΓΗ: Προσθήκη pl-1 για να μην "ακουμπάει" το κείμενο στην άκρη της οθόνης */}
