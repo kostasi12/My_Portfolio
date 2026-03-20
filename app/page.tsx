@@ -74,7 +74,7 @@ const translations = {
   el: {
     nav: { about: "Σχετικά", exp: "Εμπειρία", proj: "Projects", cont: "Επικοινωνία" },
     hero: {
-      title: "Κωνσταντίνος Σιαμπάνης",
+      title: "Onoma",
       sub: "Ηλεκτρολόγος Μηχανικός & Μηχανικός Υπολογιστών",
       btnProjects: "Δείτε τα Projects",
       btnContact: "Επικοινωνία"

@@ -1,3 +1,4 @@
+'use client';
 import { RevealOnScroll } from "./RevealOnScroll";
 import { Mail, ArrowUpRight } from "lucide-react";
 
@@ -15,16 +16,16 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-white mb-6 antialiased">
               {t.title}
             </h2>
-            {/* ΑΛΛΑΓΗ: text-slate-400 για να ταιριάζει με το νέο φόντο */}
-            <p className="text-[10px] md:text-[11px] text-slate-400 uppercase tracking-[0.14em] font-medium max-w-sm mx-auto opacity-70">
+            {/* ΑΛΛΑΓΗ: Αφαιρέθηκε το uppercase, προστέθηκε capitalize-first στυλ (Sentence case) */}
+            <p className="text-[12px] md:text-[13px] text-slate-400 tracking-[0.02em] font-medium max-w-sm mx-auto opacity-70 leading-relaxed">
               {t.subtitle}
             </p>
           </div>
         </RevealOnScroll>
 
         {/* 1. Σταθερό Label - Start a conversation */}
-        {/* ΑΛΛΑΓΗ: mb-3 md:mb-3 */}
-        <p className="mt-1 md:mt-2 mb-1 text-[9px] md:text-[10px] text-slate-500 uppercase tracking-[0.4em] font-bold">
+        {/* ΑΛΛΑΓΗ: Αφαιρέθηκε το uppercase, το κείμενο θα φαίνεται ως "Start a conversation" */}
+        <p className="mt-1 md:mt-1 mb-2 text-[11px] md:text-[12px] text-slate-500 tracking-[0.05em] font-bold">
           {lang === 'el' ? 'Ξεκινήστε μια συζήτηση' : 'Start a conversation'}
         </p>
 
@@ -34,7 +35,7 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
             href={`mailto:${email}`}
             className="group relative flex items-center gap-3 transition-all duration-500 transform hover:scale-105 will-change-transform"
           >
-            {/* Mail Icon - Γίζεται ΜΠΛΕ στο hover */}
+            {/* Mail Icon - Γίνεται ΜΠΛΕ στο hover */}
             <Mail
               size={22}
               className="text-slate-500 group-hover:text-blue-500 transition-colors duration-500 shrink-0"
@@ -42,12 +43,11 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
             />
 
             {/* Email Text - Γίνεται ΛΕΥΚΟ */}
-            {/* text-slate-400 αρχικό χρώμα */}
             <span className="text-lg md:text-[1.5rem] font-light text-slate-400 group-hover:text-white transition-all duration-500 tracking-tight antialiased select-none">
               {email}
             </span>
 
-            {/* Arrow Icon ΜΕΣΑ ΣΕ ΚΥΚΛΟ - Εμφανίζεται με slide effect */}
+            {/* Arrow Icon ΜΕΣΑ ΣΕ ΚΥΚΛΟ */}
             <div className="flex items-center justify-center w-8 h-8 rounded-full ml-0
              border border-slate-500/60
              transition-all duration-300 
@@ -55,21 +55,21 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
              group-hover:bg-blue-500/0
              group-hover:scale-105
              transform-gpu will-change-transform"
->
-  <ArrowUpRight
-    size={18}
-    className="text-slate-400 transition-colors duration-300 group-hover:text-blue-400 transform-gpu"
-    strokeWidth={1.5}
-  />
-</div>
+            >
+              <ArrowUpRight
+                size={18}
+                className="text-slate-400 transition-colors duration-300 group-hover:text-blue-400 transform-gpu"
+                strokeWidth={1.5}
+              />
+            </div>
           </a>
         </RevealOnScroll>
 
-        {/*  Footer Detail */}
-        <div className="mt-11 flex flex-col items-center gap-4">
+        {/* Footer Detail */}
+        <div className="mt-16 flex flex-col items-center gap-4">
           <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-slate-700/50 to-transparent"></div>
-          {/* text-slate-500 */}
-          <span className="text-[10px] md:text-[11px] text-slate-500 uppercase tracking-[0.4em] font-medium max-w-md mx-auto opacity-80 leading-relaxed">
+          {/* ΑΛΛΑΓΗ: Αφαιρέθηκε το uppercase για το location */}
+          <span className="text-[11px] md:text-[12px] text-slate-500 tracking-[0.05em] font-medium max-w-md mx-auto opacity-80 leading-relaxed">
             {lang === 'el' ? 'Θεσσαλονίκη, Ελλάδα' : 'Thessaloniki, Greece'}
           </span>
         </div>

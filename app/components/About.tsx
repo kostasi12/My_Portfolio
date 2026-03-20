@@ -31,7 +31,7 @@ export default function About({ t }: any) {
             */}
             <p className="text-slate-400 text-base md:text-lg leading-relaxed mx-auto 
                           text-center  
-                          max-w-[45ch] md:max-w-[65ch] 
+                          max-w-[40ch] md:max-w-[65ch] 
                           -mt-2 md:mt-0 
                           [text-wrap:balance] md:[text-wrap:pretty] 
                           antialiased">
@@ -44,10 +44,10 @@ export default function About({ t }: any) {
         <RevealOnScroll>
           <div className="text-center">
             {/* ΔΙΟΡΘΩΣΗ: mb-4 στο κινητό */}
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4 md:mb-8 tracking-tight text-white antialiased">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-5 md:mb-8 tracking-tight text-white antialiased">
               {t.skillsTitle}
             </h2>
-            
+                {/* Είχα md:px-0 κα μετά έβαλα σκετο p-2 */}                                                                
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto px-8 md:px-0">
               {Object.entries(t.categories).map(([key, value]: any) => (
                 <div 

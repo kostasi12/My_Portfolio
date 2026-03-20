@@ -13,13 +13,13 @@ export default function Experience({ t }: any) {
           
           {/* JOB 1 - Backend Developer */}
           <RevealOnScroll>
-            <div className="bg-slate-900/40 p-6 md:p-10 rounded-3xl border border-slate-800 
+            <div className="bg-slate-900/40 p-4 md:p-8 rounded-3xl border border-slate-800 
                             hover:border-blue-500/50 hover:duration-0 
                             transition-colors duration-300 
-                            h-full w-full min-h-[300px] md:min-h-[350px] flex flex-col group">
+                            h-full w-full min-h-[200px] md:min-h-[350px] flex flex-col group flex-1">
               
               {/* Μειώσαμε το min-h σε 80px και βάλαμε justify-center */}
-              <div className="min-h-[80px] flex flex-col items-center justify-center mb-2 text-center">
+              <div className="min-h-[60px] flex flex-col items-center justify-center mb-2 text-center">
                 <h3 className="text-lg md:text-xl font-semibold text-white leading-tight">
                   {t.job1.role}
                 </h3>
@@ -36,13 +36,13 @@ export default function Experience({ t }: any) {
 
           {/* JOB 2 - Διπλωματική Εργασία */}
           <RevealOnScroll>
-            <div className="bg-slate-900/40 p-6 md:p-10 rounded-3xl border border-slate-800 
+            <div className="bg-slate-900/40 p-4 md:p-8 rounded-3xl border border-slate-800 
                             hover:border-blue-500/50 hover:duration-0 
                             transition-colors duration-300 
-                            h-full w-full min-h-[250px] md:min-h-[350px] flex flex-col group">
+                            h-full w-full min-h-[200px] md:min-h-[350px] flex flex-col group flex-1">
               
               {/* Μειώσαμε το min-h σε 80px και βάλαμε justify-center */}
-              <div className="min-h-[80px] flex flex-col items-center justify-center mb-2 text-center">
+              <div className="min-h-[60px] flex flex-col items-center justify-center mb-2 text-center">
                 <h3 className="text-lg md:text-xl font-semibold text-white leading-tight">
                   {t.job2.title}
                 </h3>
