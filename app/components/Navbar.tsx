@@ -115,24 +115,24 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        {/* Κουμπί κλεισίματος (X) */}
-        <div className="flex justify-end p-4 pt-5">
+        {/* Κουμπί κλεισίματος (X) - Προσθήκη padding για να μην "κολλάει" πάνω δεξιά */}
+        <div className="flex justify-end p-6 pt-8">
           <button 
             onClick={() => setIsMenuOpen(false)}
-            className="text-slate-400 hover:text-white transition-colors p-1"
+            className="text-slate-400 hover:text-white transition-colors p-2 rounded-full hover:bg-slate-900"
           >
             <X size={28} />
           </button>
         </div>
 
-        {/* Links - pt-10 για να είναι πιο κοντά στο X */}
-        <div className="flex flex-col pt-10 px-8 gap-8 text-left">
+        {/* Links - Αύξηση px (αριστερά/δεξιά) και gap για καλύτερη αίσθηση */}
+        <div className="flex flex-col pt-6 px-10 gap-10 text-left">
           {navLinks.map((link) => (
             <a 
               key={link.id}
               href={link.id} 
               onClick={handleMobileClick}
-              className="text-xl font-medium text-slate-200 hover:text-blue-400 transition-colors border-b border-slate-900 pb-2"
+              className="text-xl font-medium text-slate-200 hover:text-blue-400 transition-colors border-b border-slate-800/50 pb-3"
             >
               {link.label}
             </a>
