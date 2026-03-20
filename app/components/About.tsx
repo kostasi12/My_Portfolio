@@ -30,11 +30,11 @@ export default function About({ t }: any) {
                4. [text-wrap:balance] -> md:[text-wrap:pretty] (desktop) για καλύτερο σπάσιμο γραμμών
             */}
             <p className="text-slate-400 text-base md:text-lg leading-relaxed mx-auto 
-                          text-center md:text-justify 
-                          max-w-4xl md:max-w-2xl 
+                          text-center  
+                          max-w-[45ch] md:max-w-[65ch] 
                           -mt-2 md:mt-0 
                           [text-wrap:balance] md:[text-wrap:pretty] 
-                          antialiased opacity-95">
+                          antialiased">
               {t.text}
             </p>
           </div>
