@@ -103,7 +103,7 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-slate-300 hover:text-white p-1 transition-colors"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={22} />}
+            {isMenuOpen ? <X size={25} /> : <Menu size={25} />}
           </button>
         </div>
       </div>
