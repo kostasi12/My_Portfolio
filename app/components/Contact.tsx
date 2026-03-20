@@ -16,7 +16,7 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
               {t.title}
             </h2>
             {/* ΑΛΛΑΓΗ: text-slate-400 για να ταιριάζει με το νέο φόντο */}
-            <p className="text-[10px] md:text-[11px] text-slate-400 uppercase tracking-[0.18em] font-medium max-w-sm mx-auto opacity-70">
+            <p className="text-[10px] md:text-[11px] text-slate-400 uppercase tracking-[0.14em] font-medium max-w-sm mx-auto opacity-70">
               {t.subtitle}
             </p>
           </div>
