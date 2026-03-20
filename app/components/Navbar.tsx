@@ -34,10 +34,10 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
   }, [lastScrollY]);
 
   const navLinks = [
-    { id: "#about", label: t.about, delay: "delay-[100ms]" },
-    { id: "#experience", label: t.exp, delay: "delay-[200ms]" },
-    { id: "#projects", label: t.proj, delay: "delay-[300ms]" },
-    { id: "#contact", label: t.cont, delay: "delay-[400ms]" },
+    { id: "#about", label: t.about },
+    { id: "#experience", label: t.exp },
+    { id: "#projects", label: t.proj },
+    { id: "#contact", label: t.cont },
   ];
 
   const handleMobileClick = (e: any) => {
@@ -67,7 +67,7 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
                 onClick={handleScroll} 
                 className="group relative px-2 py-1 text-slate-300 hover:text-white transition-colors duration-300 shrink-0"
               >
-                <span className="relative block transform-gpu transition-transform duration-300 ease-out group-hover:scale-105">
+                <span className="relative block transform-gpu transition-transform duration-300 ease-out group-hover:scale-105 will-change-transform">
                   {link.label}
                 </span>
                 <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[1.5px] bg-blue-500 group-hover:w-[60%] transition-all duration-500 ease-out"></span>
@@ -111,41 +111,30 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
 
       {/* Mobile Sidebar */}
       <div 
-        className={`fixed top-0 right-0 h-full w-[75%] max-w-[300px] bg-slate-950/95 backdrop-blur-2xl border-l border-slate-800 z-[65] transition-transform duration-500 ease-in-out transform md:hidden ${
+        className={`fixed top-0 right-0 h-full w-[75%] max-w-[300px] bg-slate-950/95 backdrop-blur-2xl border-l border-slate-800 z-[65] transition-transform duration-300 ease-in-out transform md:hidden ${
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        {/* Κουμπί κλεισίματος (X) */}
+        {/* Κουμπί κλεισίματος (X) - Προσθήκη padding για να μην "κολλάει" πάνω δεξιά */}
         <div className="flex justify-end p-6 pt-8">
           <button 
             onClick={() => setIsMenuOpen(false)}
-            className="text-slate-400 hover:text-white active:text-blue-400 active:scale-90 transition-all p-2 rounded-full hover:bg-slate-900"
+            className="text-slate-400 hover:text-white transition-colors p-2 rounded-full hover:bg-slate-900"
           >
             <X size={28} />
           </button>
         </div>
 
-        {/* Mobile Links */}
+        {/* Links - Αύξηση px (αριστερά/δεξιά) και gap για καλύτερη αίσθηση */}
         <div className="flex flex-col pt-6 px-10 gap-10 text-left">
           {navLinks.map((link) => (
             <a 
               key={link.id}
               href={link.id} 
               onClick={handleMobileClick}
-              className={`group relative text-xl font-medium text-slate-200 hover:text-blue-400 pb-3 transition-all duration-700 transform ${
-                isMenuOpen 
-                  ? 'opacity-100 translate-y-0' 
-                  : 'opacity-0 translate-y-8'
-              } ${link.delay}`}
+              className="text-xl font-medium text-slate-200 hover:text-blue-400 transition-colors border-b border-slate-800/50 pb-3"
             >
-              {/* Το κείμενο */}
-              <span>{link.label}</span>
-              
-              {/* Η γραμμή που μεγαλώνει στο hover/active */}
-              <span className="absolute bottom-0 left-0 h-[1px] bg-blue-500/50 w-full transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"></span>
-              
-              {/* Η σταθερή αχνή γραμμή (border-bottom) */}
-              <span className="absolute bottom-0 left-0 h-[1px] bg-slate-800/50 w-full"></span>
+              {link.label}
             </a>
           ))}
         </div>
