@@ -69,7 +69,7 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
         <div className="mt-16 flex flex-col items-center gap-4">
           <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-slate-700/50 to-transparent"></div>
           {/* ΑΛΛΑΓΗ: Αφαιρέθηκε το uppercase για το location */}
-          <span className="text-[11px] md:text-[12px] text-slate-500 tracking-[0.05em] font-medium max-w-md mx-auto opacity-80 leading-relaxed">
+          <span className="text-[11px] md:text-[12px] text-slate-500 tracking-[0.1em] font-medium max-w-md mx-auto opacity-80 leading-relaxed">
             {lang === 'el' ? 'Θεσσαλονίκη, Ελλάδα' : 'Thessaloniki, Greece'}
           </span>
         </div>

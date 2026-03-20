@@ -18,7 +18,6 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
   useEffect(() => {
     const controlNavbar = () => {
       if (typeof window !== 'undefined') {
-        // Έλεγχος αν είμαστε σε mobile (πλάτος κάτω από 768px - md της Tailwind)
         const isMobile = window.innerWidth < 768;
 
         if (isMobile) {
@@ -29,7 +28,6 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
             setIsVisible(true);
           }
         } else {
-          // Στο desktop παραμένει πάντα ορατό
           setIsVisible(true);
         }
         setLastScrollY(window.scrollY);
@@ -58,10 +56,12 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-3 md:px-8 py-3 flex justify-between items-center">
+      {/* ΑΛΛΑΓΗ: px-6 στο κινητό (αντί για px-3) για να έρθει πιο μέσα το περιεχόμενο */}
+      <div className="max-w-6xl mx-auto px-5 md:px-8 py-3 flex justify-between items-center">
 
         {/* Logo */}
-        <div className="text-white font-bold text-base md:text-lg tracking-tighter shrink-0">
+        {/* ΑΛΛΑΓΗ: Προσθήκη pl-1 για να μην "ακουμπάει" το κείμενο στην άκρη της οθόνης */}
+        <div className="text-white font-bold text-base md:text-lg tracking-tighter shrink-0 pl-1">
           My<span className="text-blue-300">Portfolio</span>
         </div>
 
@@ -90,7 +90,8 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
         </div>
 
         {/* Mobile Actions  */}
-        <div className="flex md:hidden items-center gap-3">
+        {/* ΑΛΛΑΓΗ: pr-1 για να υπάρχει συμμετρία με το αριστερό μέρος */}
+        <div className="flex md:hidden items-center gap-3 pr-1">
           <button 
             onClick={() => setLang(lang === 'en' ? 'el' : 'en')}
             className="px-2 py-1 border border-blue-500/80 rounded-lg text-blue-300 text-[11px] font-bold shrink-0"
@@ -102,7 +103,7 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-slate-300 hover:text-white p-1 transition-colors"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={24} /> : <Menu size={22} />}
           </button>
         </div>
       </div>
