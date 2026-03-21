@@ -31,7 +31,7 @@ export default function About({ t }: any) {
             */}
             <p className="text-slate-400 text-base md:text-lg leading-relaxed mx-auto 
                           text-center  
-                          max-w-[40ch] md:max-w-[65ch] 
+                          max-w-[90ch] md:max-w-[65ch] 
                           -mt-2 md:mt-0 
                           [text-wrap:balance] md:[text-wrap:pretty] 
                           antialiased">
@@ -52,7 +52,7 @@ export default function About({ t }: any) {
               {Object.entries(t.categories).map(([key, value]: any) => (
                 <div 
                   key={key} 
-                  className="bg-slate-900/40 p-8 rounded-3xl border border-slate-800 
+                  className="bg-slate-900/40 p-6 md:p-8 rounded-3xl border border-slate-800 
                                hover:border-blue-500/50 hover:duration-0 
                                transition-[transform,background-color] duration-300 
                                flex flex-col items-center group relative"
