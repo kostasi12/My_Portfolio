@@ -17,25 +17,25 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
               {t.title}
             </h2>
             {/* ΑΛΛΑΓΗ: Αφαιρέθηκε το uppercase, προστέθηκε capitalize-first στυλ (Sentence case) */}
-            <p className="text-[12px] md:text-[13px] text-slate-400 tracking-[0.02em] font-medium max-w-sm mx-auto opacity-70 leading-relaxed">
+            <p className="text-[12px] md:text-[13px] text-slate-400/80 tracking-[0.08em] font-light max-w-sm mx-auto leading-relaxed antialiased">
               {t.subtitle}
             </p>
           </div>
         </RevealOnScroll>
 
-        {/* 1. Σταθερό Label - Start a conversation */}
-        {/* ΑΛΛΑΓΗ: Αφαιρέθηκε το uppercase, το κείμενο θα φαίνεται ως "Start a conversation" */}
-        <p className="mt-1 md:mt-1 mb-2 text-[11px] md:text-[12px] text-slate-500 tracking-[0.05em] font-bold">
-          {lang === 'el' ? 'Ξεκινήστε μια συζήτηση' : 'Start a conversation'}
+        {/* Σταθερό Label - Get in touch*/}
+        {/* Αφαιρέθηκε το uppercase*/}
+        <p className="mt-1 md:mt-1 mb-2 text-[9px] md:text-[10px] text-slate-500/80 uppercase tracking-[0.20em] font-semibold">
+          {lang === 'el' ? 'Επικοινωνήστε μαζί μου' : 'Get in touch'}
         </p>
 
-        {/* 2. Διαδραστικό Email Group - Με Κύκλο στο Βέλος */}
+        {/* Email - Με Κύκλο στο Βέλος */}
         <RevealOnScroll>
           <a
             href={`mailto:${email}`}
             className="group relative flex items-center gap-3 transition-all duration-500 transform hover:scale-105 will-change-transform"
           >
-            {/* Mail Icon - Γίνεται ΜΠΛΕ στο hover */}
+            {/* Mail Icon - Γίνεται μπλε στο hover */}
             <Mail
               size={22}
               className="text-slate-500 group-hover:text-blue-500 transition-colors duration-500 shrink-0"
@@ -43,13 +43,13 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
             />
 
             {/* Email Text - Γίνεται ΛΕΥΚΟ */}
-            <span className="text-lg md:text-[1.5rem] font-light text-slate-400 group-hover:text-white transition-all duration-500 tracking-tight antialiased select-none">
+            <span className="text-[1.15rem] md:text-[1.55rem] font-light text-slate-400 group-hover:text-white transition-all duration-500 tracking-[-0.04em] antialiased select-none">
               {email}
             </span>
 
             {/* Arrow Icon ΜΕΣΑ ΣΕ ΚΥΚΛΟ */}
             <div className="flex items-center justify-center w-8 h-8 rounded-full ml-0
-             border border-slate-500/60
+             border border-slate-600/70
              transition-all duration-300 
              group-hover:border-blue-500
              group-hover:bg-blue-500/0
@@ -69,7 +69,7 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
         <div className="mt-16 flex flex-col items-center gap-4">
           <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-slate-700/50 to-transparent"></div>
           {/* ΑΛΛΑΓΗ: Αφαιρέθηκε το uppercase για το location */}
-          <span className="text-[11px] md:text-[12px] text-slate-500 tracking-[0.1em] font-medium max-w-md mx-auto opacity-80 leading-relaxed">
+          <span className="text-[11px] md:text-[12px] text-slate-500 tracking-[0.2em] font-medium max-w-md mx-auto opacity-80 leading-relaxed">
             {lang === 'el' ? 'Θεσσαλονίκη, Ελλάδα' : 'Thessaloniki, Greece'}
           </span>
         </div>

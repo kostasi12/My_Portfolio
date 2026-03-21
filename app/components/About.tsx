@@ -4,10 +4,10 @@ import { FaBrain } from "react-icons/fa";
 
 export default function About({ t }: any) {
   const icons: any = {
-    backend: <DiPython className="text-4xl text-blue-500 mb-4" />,
-    frontend: <DiReact className="text-4xl text-blue-500 mb-4" />,
-    ml: <FaBrain className="text-3xl text-blue-500 mb-5" />,
-    tools: <DiGit className="text-4xl text-blue-500 mb-4" />,
+    backend: <DiPython className="text-4xl text-blue-500 mb-3" />,
+    frontend: <DiReact className="text-4xl text-blue-500 mb-3" />,
+    ml: <FaBrain className="text-3xl text-blue-500 mb-3" />,
+    tools: <DiGit className="text-4xl text-blue-500 mb-3" />,
   };
 
   return (
@@ -15,11 +15,11 @@ export default function About({ t }: any) {
     <section id="about" className="relative z-10 pt-6 pb-10 md:pb-14 px-0 bg-slate-950/60 overflow-hidden">
       <div className="max-w-3xl mx-auto">
         
-        {/* ΚΕΙΜΕΝΟ ABOUT */}
+        {/* Κείμενο Αbout */}
         <RevealOnScroll>
           <div className="text-center mb-10 md:mb-14 px-8">
-            {/* ΔΙΟΡΘΩΣΗ: mb-4 στο κινητό για να έρθει πιο κοντά το κείμενο */}
-            <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-8 tracking-tight text-white antialiased">
+            {/* mb-4 στο κινητό για να έρθει πιο κοντά το κείμενο */}
+            <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-6 tracking-tight text-white antialiased">
               {t.title}
             </h2>
             
@@ -57,7 +57,7 @@ export default function About({ t }: any) {
                                transition-[transform,background-color] duration-300 
                                flex flex-col items-center group relative"
                 >
-                  <div className="group-hover:scale-110 transition-transform duration-300 transform-gpu translate-z-0">
+                  <div className="group-hover:scale-110 transition-transform duration-300 transform-gpu translate-z-0 h-12 flex items-center justify-center">
                     {icons[key]}
                   </div>
                   
@@ -73,7 +73,10 @@ export default function About({ t }: any) {
                     {key === 'ml' && (
                         <>PyTorch • Computer Vision {"\n"} CNN • Transformers</>
                     )}
-                    {key === 'tools' && "Git • GitHub • Postman"}
+                    {key === 'tools' && (
+                        <> Git • GitHub • Postman • Vercel </> 
+
+                    )}
                   </div>
                 </div>
               ))}

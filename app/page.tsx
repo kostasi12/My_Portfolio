@@ -186,7 +186,7 @@ export default function Home() {
       {/* 1. Γραμμή Πριν το About */}
       <div className="flex justify-center">
         <div className="w-full max-w-[1000px] px-6">
-          <div className="h-[0.9px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
+          <div className="h-[0.8px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
         </div>
       </div>
 
@@ -195,7 +195,7 @@ export default function Home() {
       {/* 2. Γραμμή Πριν την Εμπειρία */}
       <div className="flex justify-center">
         <div className="w-full max-w-[1000px] px-6">
-          <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
+          <div className="h-[0.8px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
         </div>
       </div>
       
@@ -205,7 +205,7 @@ export default function Home() {
       {/* 3. Γραμμή Πριν τα Projects */}
       <div className="flex justify-center">
         <div className="w-full max-w-[1000px] px-6"> 
-          <div className="h-[0.9px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
+          <div className="h-[0.8px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
         </div>
       </div>
 
@@ -214,7 +214,7 @@ export default function Home() {
       {/* 4. Γραμμή Πριν το Contact */}
       <div className="flex justify-center">
         <div className="w-full max-w-[1000px] px-6">
-          <div className="h-[0.65px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
+          <div className="h-[0.8px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
         </div>
       </div>
 
