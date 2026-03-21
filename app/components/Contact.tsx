@@ -43,7 +43,7 @@ export default function Contact({ t, lang }: { t: any; lang: string }) {
             />
 
             {/* Email Text - Γίνεται ΛΕΥΚΟ */}
-            <span className="text-[1.15rem] md:text-[1.55rem] font-light text-slate-400 group-hover:text-white transition-all duration-500 tracking-[-0.04em] antialiased select-none">
+            <span className="text-[1.15rem] md:text-[1.55rem] font-light text-slate-400 group-hover:text-white transition-all duration-500 tracking-[-0.02em] antialiased select-none">
               {email}
             </span>
 
