@@ -33,7 +33,7 @@ const translations = {
       job1: {
         role: "Backend Developer",
         title: "Internship – RealMINT",
-        desc: "Designed and implemented backend architecture using Python and Django. Developed RESTful APIs, integrated PostgreSQL databases, and contributed to iOS development using Swift."
+        desc: "Designed and implemented backend with Python/Django, developed RESTful APIs, managed PostgreSQL, and built a native iOS app with Swift."
       },
       job2: {
         title: "Diploma Thesis",
@@ -50,7 +50,7 @@ const translations = {
         },
         {
           title: "Crypto App",
-          desc: "Cryptocurrency application development, featuring a custom frontend for data visualization."
+          desc: "Designed and optimized a cryptocurrency app with SwiftUI, integrating APIs for accurate real-time data visualization."
         },
         {
           title: "Deep Learning (CNN & ViT)",
@@ -62,7 +62,7 @@ const translations = {
         },
         {
           title: "Portfolio",
-          desc: "Design and development of a website using Next.js, React, and Tailwind CSS."
+          desc: "Architecture and development of a web app using Next.js, React, and Tailwind CSS, focusing on functional UI, smooth navigation, and an optimized experience across all devices."
         }
       ]
     },
@@ -74,7 +74,7 @@ const translations = {
   el: {
     nav: { about: "Σχετικά", exp: "Εμπειρία", proj: "Projects", cont: "Επικοινωνία" },
     hero: {
-      title: "Onoma",
+      title: "Κωνσταντίνος Σιαμπάνης",
       sub: "Ηλεκτρολόγος Μηχανικός & Μηχανικός Υπολογιστών",
       btnProjects: "Δείτε τα Projects",
       btnContact: "Επικοινωνία"
@@ -95,7 +95,7 @@ const translations = {
       job1: {
         role: "Backend Developer",
         title: "Πρακτική Άσκηση – RealMINT",
-        desc: "Σχεδιασμός και υλοποίηση backend αρχιτεκτονικής με Python και Django. Ανάπτυξη RESTful APIs, διαχείριση βάσεων PostgreSQL και συμμετοχή στο development iOS εφαρμογής με Swift."
+        desc: "Σχεδίαση και υλοποίηση backend με Python/Django, δημιουργία RESTful APIs, διαχείριση βάσεων PostgreSQL και ανάπτυξη native iOS εφαρμογής με Swift."
       },
       job2: {
         title: "Διπλωματική Εργασία",
@@ -112,7 +112,7 @@ const translations = {
         },
         {
           title: "Crypto App",
-          desc: "Υλοποίηση εφαρμογής κρυπτονομισμάτων, με σχεδιασμό και ανάπτυξη του frontend για την οπτικοποίηση των δεδομένων."
+          desc: "Σχεδίαση και βελτιστοποίηση εφαρμογής κρυπτονομισμάτων με SwiftUI. Διασύνδεση με APIs για την ακριβή απεικόνιση δεδομένων σε πραγματικό χρόνο."
         },
         {
           title: "Deep Learning (CNN & ViT)",
@@ -124,7 +124,7 @@ const translations = {
         },
         {
           title: "Portfolio",
-          desc: "Σχεδιασμός και ανάπτυξη ιστοσελίδας με Next.js , React και Tailwind CSS."
+          desc: "Αρχιτεκτονική και δημιουργία ιστοσελίδας με Next.js, React και Tailwind CSS, με έμφαση σε λειτουργικό UI, ομαλή πλοήγηση και βέλτιστη εμπειρία σε κάθε συσκευή."
         }
       ]
     },
