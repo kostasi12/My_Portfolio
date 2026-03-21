@@ -116,17 +116,17 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
         }`}
       >
         {/* Κουμπί κλεισίματος (X) - Προσθήκη padding για να μην "κολλάει" πάνω δεξιά */}
-        <div className="flex justify-end p-6 pt-8">
+        <div className="flex justify-end p-6 pt-5">
           <button 
             onClick={() => setIsMenuOpen(false)}
             className="text-slate-400 hover:text-white transition-colors p-2 rounded-full hover:bg-slate-900"
           >
-            <X size={28} />
+            <X size={26} />
           </button>
         </div>
 
         {/* Links - Αύξηση px (αριστερά/δεξιά) και gap για καλύτερη αίσθηση */}
-        <div className="flex flex-col pt-6 px-10 gap-10 text-left">
+        <div className="flex flex-col pt-6 px-10 gap-6 text-left">
           {navLinks.map((link) => (
             <a 
               key={link.id}
