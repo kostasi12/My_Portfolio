@@ -17,23 +17,23 @@ export default function About({ t }: any) {
         
         {/* Κείμενο Αbout */}
         <RevealOnScroll>
-          <div className="text-center mb-10 md:mb-14 px-8">
+          <div className="text-center mb-10 md:mb-14 px-6">
             {/* mb-4 στο κινητό για να έρθει πιο κοντά το κείμενο */}
             <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-6 tracking-tight text-white antialiased">
               {t.title}
             </h2>
             
             {/* ΑΛΛΑΓΗ ΓΙΑ ΟΜΟΙΟΜΟΡΦΙΑ:
-               1. text-center (mobile) -> md:text-justify (desktop)
-               2. text-base (mobile) -> md:text-lg (desktop)
-               3. md:max-w-2xl (αντί για 3xl) στο desktop για να μην απλώνει πολύ η δικαιολόγηση
-               4. [text-wrap:balance] -> md:[text-wrap:pretty] (desktop) για καλύτερο σπάσιμο γραμμών
+                text-center (mobile) -> md:text-justify (desktop)
+                text-base (mobile) -> md:text-lg (desktop)
+                md:max-w-2xl (αντί για 3xl) στο desktop για να μην απλώνει πολύ η δικαιολόγηση
+                [text-wrap:balance] -> md:[text-wrap:pretty] (desktop) για καλύτερο σπάσιμο γραμμών
             */}
             <p className="text-slate-400 text-base md:text-lg leading-relaxed mx-auto 
                           text-center  
-                          max-w-[90ch] md:max-w-[65ch] 
+                          max-w-[95ch] md:max-w-[65ch] 
                           -mt-2 md:mt-0 
-                          [text-wrap:balance] md:[text-wrap:pretty] 
+                          [text-wrap:pretty] 
                           antialiased">
               {t.text}
             </p>
