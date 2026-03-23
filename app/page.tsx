@@ -62,7 +62,7 @@ const translations = {
         },
         {
           title: "Portfolio",
-          desc: "Architecture and development of a web app using Next.js, React, and Tailwind CSS, focusing on functional UI, smooth navigation, and an optimized experience across all devices."
+          desc: "Development of a web app using Next.js, React, and Tailwind CSS, focusing on functional UI, smooth navigation, and an optimized experience across all devices."
         }
       ]
     },
@@ -124,7 +124,7 @@ const translations = {
         },
         {
           title: "Portfolio",
-          desc: "Αρχιτεκτονική και δημιουργία ιστοσελίδας με Next.js, React και Tailwind CSS, με έμφαση σε λειτουργικό UI, ομαλή πλοήγηση και βέλτιστη εμπειρία σε κάθε συσκευή."
+          desc: "Δημιουργία ιστοσελίδας με Next.js, React και Tailwind CSS, με έμφαση σε λειτουργικό UI, ομαλή πλοήγηση και βέλτιστη εμπειρία σε κάθε συσκευή."
         }
       ]
     },
@@ -150,7 +150,7 @@ export default function Home() {
   useEffect(() => {
     if (mounted) {
       localStorage.setItem("lang", lang);
-      //  Αλλάζει το lang του html tag δυναμικά
+      //  Αλλάζει το lang του html tag 
       document.documentElement.lang = lang;
     }
   }, [lang, mounted]);
@@ -183,7 +183,7 @@ export default function Home() {
 
       <Hero t={t.hero} handleScroll={handleScroll} />
 
-      {/* 1. Γραμμή Πριν το About */}
+      {/* Γραμμή πριν το About */}
       <div className="flex justify-center">
         <div className="w-full max-w-[1000px] px-6">
           <div className="h-[0.8px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
@@ -192,7 +192,7 @@ export default function Home() {
 
       <About t={t.about} />
 
-      {/* 2. Γραμμή Πριν την Εμπειρία */}
+      {/* Γραμμή Πριν την Εμπειρία */}
       <div className="flex justify-center">
         <div className="w-full max-w-[1000px] px-6">
           <div className="h-[0.8px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
@@ -202,7 +202,7 @@ export default function Home() {
       {/* Το Experience είναι τώρα μόνο του, χωρίς το μπλε div wrapper */}
       <Experience t={t.experience} />
       
-      {/* 3. Γραμμή Πριν τα Projects */}
+      {/* Γραμμή Πριν τα Projects */}
       <div className="flex justify-center">
         <div className="w-full max-w-[1000px] px-6"> 
           <div className="h-[0.8px] w-full bg-gradient-to-r from-transparent via-blue-300/40 to-transparent animate-pulse"></div>
