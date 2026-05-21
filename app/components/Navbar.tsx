@@ -111,7 +111,7 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
 
       {/* Mobile Sidebar */}
       <div 
-        className={`fixed top-0 right-0 h-full w-[75%] max-w-[300px] bg-slate-950/95 backdrop-blur-2xl border-l border-slate-800 z-[65] transition-transform duration-300 ease-in-out transform md:hidden ${
+        className={`fixed top-0 right-0 h-full w-[75%] max-w-[300px] bg-slate-950/95 backdrop-blur-2xl border-l border-blue-500/5 z-[65] transition-transform duration-300 ease-in-out transform md:hidden ${
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -126,13 +126,13 @@ export default function Navbar({ t, lang, setLang, handleScroll }: NavbarProps) 
         </div>
 
         {/* Links - Αύξηση px (αριστερά/δεξιά) και gap για καλύτερη αίσθηση */}
-        <div className="flex flex-col pt-6 px-10 gap-6 text-left">
+        <div className="flex flex-col pt-4 px-10 gap-6 text-left">
           {navLinks.map((link) => (
             <a 
               key={link.id}
               href={link.id} 
               onClick={handleMobileClick}
-              className="text-xl font-medium text-slate-200 hover:text-blue-400 transition-colors border-b border-slate-800/80 pb-3"
+              className="text-xl font-medium text-slate-200 hover:text-blue-300 transition-colors border-b border-blue-500/20 pb-3"
             >
               {link.label}
             </a>
