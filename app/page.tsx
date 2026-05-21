@@ -112,7 +112,7 @@ const translations = {
         },
         {
           title: "Deep Learning (CNN & ViT)",  
-          desc: "Σχεδιασμός αρχιτεκτονικής PyTorch για ταξινόμηση ιατρικών εικόνων (DermaMNIST) και σύγκριση CNN με Vision Transformers (DeiT) για βέλτιστη ακρίβεια διάγνωσης."  
+          desc: "Σχεδιασμός αρχιτεκτονικής PyTorch για ταξινόμηση ιατρικών εικόνων (DermaMNIST) με σύγκριση CNN και Vision Transformers (DeiT) για βέλτιστη ακρίβεια."  
         },
         {
           title: "Portfolio",
