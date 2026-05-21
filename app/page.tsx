@@ -12,7 +12,7 @@ const translations = {
   en: {
     nav: { about: "About", exp: "Experience", proj: "Projects", cont: "Contact" },
     hero: {
-      title: "Konstantinos Siampanis ",
+      title: "Konstantinos Siampanis",
       sub: "Electrical & Computer Engineer",
       btnProjects: "View Projects",
       btnContact: "Contact"
@@ -49,20 +49,20 @@ const translations = {
           desc: "Developed a web application for coffee shop management using Django and PostgreSQL. Designed and tested RESTful APIs utilizing Postman."
         },
         {
-          title: "Crypto App",
-          desc: "Designed and optimized a cryptocurrency app with SwiftUI, integrating APIs for accurate real-time data visualization."
-        },
-        {
           title: "Deep Learning (CNN & ViT)",
           desc: "Developed and trained Computer Vision models in PyTorch for medical image classification using CNNs and Vision Transformers."
         },
         {
-          title: "AAC Audio Coder/Decoder",
-          desc: "Implementation of an AAC audio coding system in Python. Applied compression algorithms and evaluated performance using SNR and Bitrate metrics."
-        },
-        {
           title: "Portfolio",
           desc: "Development of a web app using Next.js, React, and Tailwind CSS, focusing on functional UI, smooth navigation, and an optimized experience across all devices."
+        },
+        {
+          title: "Crypto App",
+          desc: "Designed and optimized a cryptocurrency app with SwiftUI, integrating APIs for accurate real-time data visualization."
+        },
+        {
+          title: "AAC Audio Coder/Decoder",
+          desc: "Implementation of an AAC audio coding system in Python. Applied compression algorithms and evaluated performance using SNR and Bitrate metrics."
         }
       ]
     },
@@ -111,20 +111,20 @@ const translations = {
           desc: "Ανάπτυξη web εφαρμογής για τη διαχείριση καφετέριας με χρήση Django και PostgreSQL. Σχεδιασμός και δοκιμή RESTful APIs με χρήση Postman."
         },
         {
-          title: "Crypto App",
-          desc: "Σχεδίαση και βελτιστοποίηση εφαρμογής κρυπτονομισμάτων με SwiftUI. Διασύνδεση με APIs για την ακριβή απεικόνιση δεδομένων σε πραγματικό χρόνο."
-        },
-        {
-          title: "Deep Learning (CNN & ViT)",
-          desc: "Ανάπτυξη και εκπαίδευση μοντέλων Computer Vision σε PyTorch για την ταξινόμηση ιατρικών εικόνων με χρήση CNN και Vision Transformers."
-        },
-        {
-          title: "AAC Audio Coder/Decoder",
-          desc: "Υλοποίηση συστήματος κωδικοποίησης ήχου κατά το πρότυπο AAC. Εφαρμογή αλγορίθμων συμπίεσης και αξιολόγηση μέσω μετρήσεων (SNR, Bitrate)."
+          title: "Deep Learning (CNN & ViT)",  
+          desc: "Ανάπτυξη και εκπαίδευση μοντέλων Computer Vision σε PyTorch για την ταξινόμηση ιατρικών εικόνων με χρήση CNN και Vision Transformers."  
         },
         {
           title: "Portfolio",
           desc: "Δημιουργία ιστοσελίδας με Next.js, React και Tailwind CSS, με έμφαση σε λειτουργικό UI, ομαλή πλοήγηση και βέλτιστη εμπειρία σε κάθε συσκευή."
+        },
+        {
+          title: "Crypto App",
+          desc: "Σχεδίαση και βελτιστοποίηση εφαρμογής κρυπτονομισμάτων με SwiftUI. Διασύνδεση με APIs για την ακριβή απεικόνιση δεδομένων σε πραγματικό χρόνο."
+        }, 
+        {
+          title: "AAC Audio Coder/Decoder",
+          desc: "Υλοποίηση συστήματος κωδικοποίησης ήχου κατά το πρότυπο AAC. Εφαρμογή αλγορίθμων συμπίεσης και αξιολόγηση μέσω μετρήσεων (SNR, Bitrate)."
         }
       ]
     },
@@ -170,9 +170,9 @@ export default function Home() {
       elem?.scrollIntoView({ behavior: "smooth" });
     }
   };
+       // Αλλαγή στο return του page.tsx auto eixa <main className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-950 to-gray-950 text-gray-100 leading-relaxed scroll-smooth">
 
-  return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-950 to-gray-950 text-gray-100 leading-relaxed scroll-smooth">
+  return (<main className="min-h-screen text-[var(--foreground)] selection:bg-[var(--accent-cyan)]/30 selection:text-[var(--accent-cyan)]">
 
       <Navbar
         t={t.nav}

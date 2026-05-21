@@ -1,67 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  /* Ένα κλικ πιο σκούρο και σταθερό για να μην κάνει "νερά" */
-  --background: #070708; 
-  --foreground: #ededed;
+  /* Μια καθαρή Navy παλέτα */
+  --background-top: #0f172a;    /* Slate-900 */
+  --background-bottom: #020617; /* Slate-950 (πιο σκούρο για το τέλος της σελίδας) */
+  --foreground: #f8fafc;
+  --accent-blue: #3b82f6;
 }
 
 body {
-  background-color: #070708;
-  overscroll-behavior-y: none;
-  background-color: var(--background); /* Χρησιμοποιούμε background-color για σταθερότητα */
+  /* Αντί για κύκλους φωτός, χρησιμοποιούμε μια ομαλή μετάβαση από πάνω προς τα κάτω */
+  background: linear-gradient(to bottom, var(--background-top), var(--background-bottom));
+  background-attachment: fixed; /* Το background μένει σταθερό καθώς σκρολάρεις */
+  
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  /* Προσθήκη για να μην έχουμε περίεργα overflows δεξιά */
-  overflow-x: hidden; 
+  
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Body styling */
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-inter), system-ui, sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-/* Floating animation για hero title */
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-/* Optional scrollbar styling */
+/* Καθαρό και διακριτικό Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: var(--background-bottom);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #456da7;
+  background: #1e293b;
   border-radius: 10px;
+  border: 2px solid var(--background-bottom);
 }
 
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue);
+}
 
+/* Για να "πετάνε" οι κάρτες σου πάνω στο Navy */
+.card-style {
+  background: rgba(30, 41, 59, 0.5); /* Ημιδιάφανο Slate */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}

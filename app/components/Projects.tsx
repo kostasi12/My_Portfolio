@@ -1,19 +1,19 @@
 import { RevealOnScroll } from "./RevealOnScroll";
 import { 
   Coffee, 
-  ChartColumnIncreasing, 
   BrainCircuit, 
-  Music, 
-  Layout 
+  ChartColumnIncreasing, 
+  Layout , 
+  Music
 } from "lucide-react";
 
 export default function Projects({ t }: any) {
   const projectIcons = [
     <Coffee size={30} strokeWidth={2.5} className="text-blue-500 mb-2" />,        
-    <ChartColumnIncreasing size={30} strokeWidth={2.5} className="text-blue-500 mb-2" />, 
-    <BrainCircuit size={30} strokeWidth={2.5} className="text-blue-500 mb-2" />,  
+    <BrainCircuit size={30} strokeWidth={2.5} className="text-blue-500 mb-2" />, 
+    <Layout size={30} strokeWidth={2.5} className="text-blue-500 mb-2" />,  
+    <ChartColumnIncreasing size={30} strokeWidth={2.5} className="text-blue-500 mb-2" />,         
     <Music size={30} strokeWidth={2.5} className="text-blue-500 mb-2" />,         
-    <Layout size={30} strokeWidth={2.5} className="text-blue-500 mb-2" />,         
   ];
 
   return ( 
