@@ -58,7 +58,7 @@ const translations = {
         },
         {
           title: "Crypto App",
-          desc: "Designed and optimized a cryptocurrency app with SwiftUI, integrating APIs for accurate real-time data visualization."
+          desc: "Design and optimization of a cryptocurrency app with SwiftUI, integrating APIs for real-time financial data visualization."
         },
         {
           title: "AAC Audio Coder/Decoder",
@@ -120,7 +120,7 @@ const translations = {
         },
         {
           title: "Crypto App",
-          desc: "Σχεδίαση και βελτιστοποίηση εφαρμογής κρυπτονομισμάτων με SwiftUI. Διασύνδεση με APIs για την ακριβή απεικόνιση δεδομένων σε πραγματικό χρόνο."
+          desc: "Σχεδίαση και βελτιστοποίηση εφαρμογής κρυπτονομισμάτων με SwiftUI. Διασύνδεση με APIs για την απεικόνιση οικονομικών δεδομένων σε πραγματικό χρόνο."
         }, 
         {
           title: "AAC Audio Coder/Decoder",
