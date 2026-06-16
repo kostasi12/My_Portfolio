@@ -45,8 +45,8 @@ const translations = {
       title: "Projects",
       items: [
         {
-          title: "Coffee Shop App",
-          desc: "Developed a web application for coffee shop management using Django and PostgreSQL. Designed and tested RESTful APIs utilizing Postman."
+          title: "Coffee Shop Web App",
+          desc: "Developed a coffee shop management web app (Django, PostgreSQL) for availability-based ordering and tested APIs using Postman."
         },
         {
           title: "Deep Learning (CNN & ViT)",
@@ -107,8 +107,8 @@ const translations = {
       title: "Projects",
       items: [
         {
-          title: "Coffee Shop App",
-          desc: "Ανάπτυξη web εφαρμογής για τη διαχείριση καφετέριας με χρήση Django και PostgreSQL. Σχεδιασμός και δοκιμή RESTful APIs με χρήση Postman."
+          title: "Coffee Shop Web App",
+          desc: "Ανάπτυξη web εφαρμογής διαχείρισης καφετέριας (Django, PostgreSQL) για παραγγελίες προϊόντων βάσει διαθεσιμότητας και δοκιμή APIs (Postman)."
         },
         {
           title: "Deep Learning (CNN & ViT)",  
