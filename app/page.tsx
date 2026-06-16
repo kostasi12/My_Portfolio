@@ -31,7 +31,7 @@ const translations = {
     experience: {
       title: "Experience",
       job1: {
-        role: "Backend Developer",
+        role: "Full Stack Developer",
         title: "Internship – RealMINT",
         desc: "Designed and implemented backend with Python/Django, developed RESTful APIs, managed PostgreSQL, and built a native iOS app with Swift."
       },
@@ -93,7 +93,7 @@ const translations = {
     experience: {
       title: "Επαγγελματική Εμπειρία",
       job1: {
-        role: "Backend Developer",
+        role: "Full Stack Developer",
         title: "Πρακτική Άσκηση – RealMINT",
         desc: "Σχεδίαση και υλοποίηση backend με Python/Django, δημιουργία RESTful APIs, διαχείριση βάσεων PostgreSQL και ανάπτυξη native iOS εφαρμογής με Swift."
       },
