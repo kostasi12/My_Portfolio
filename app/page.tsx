@@ -33,12 +33,12 @@ const translations = {
       job1: {
         role: "Full Stack Developer",
         title: "Internship – RealMINT",
-        desc: "Designed and implemented backend with Python/Django, developed RESTful APIs, managed PostgreSQL, and built a native iOS app with Swift."
+        desc: "Designed and implemented backend with Python/Django, developed RESTful APIs, managed PostgreSQL and built a native iOS crypto app with Swift."
       },
       job2: {
         title: "Diploma Thesis",
-        subtitle: "Software Evaluation & Upgrade",
-        desc: "Evaluation and technical upgrade of Lightning Protection software. Designed and developed a modern UI/UX to enhance usability and user experience."
+        subtitle: "Drug Repurposing with GNNs & GraphRAG",
+        desc: "GNN models to predict new uses for existing drugs, compared against XGBoost, along with GraphRAG using a local LLM for evidence-backed explanations and minimize hallucinations."
       }
     },
     projects: {
@@ -95,12 +95,12 @@ const translations = {
       job1: {
         role: "Full Stack Developer",
         title: "Πρακτική Άσκηση – RealMINT",
-        desc: "Σχεδίαση και υλοποίηση backend με Python/Django, δημιουργία RESTful APIs, διαχείριση βάσεων PostgreSQL και ανάπτυξη native iOS εφαρμογής με Swift."
+        desc: "Σχεδίαση και υλοποίηση backend με Python/Django, δημιουργία RESTful APIs, διαχείριση βάσεων PostgreSQL και ανάπτυξη native iOS εφαρμογής για κρυπτονομίσματα με SwiftUI."
       },
       job2: {
         title: "Διπλωματική Εργασία",
-        subtitle: "Αξιολόγηση & Αναβάθμιση Λογισμικού",
-        desc: "Αξιολόγηση και τεχνική αναβάθμιση λογισμικού Αντικεραυνικής Προστασίας. Σχεδιασμός και ανάπτυξη UI/UX για τη βελτίωση της εμπειρίας του χρήστη."
+        subtitle: "Επαναστόχευση φαρμάκων με GNNs και GraphRAG",
+        desc: "Μοντέλα GNNs για πρόβλεψη νέων χρήσεων σε υπάρχοντα φάρμακα, με σύγκριση έναντι XGBoost και GraphRAG με τοπικό LLM για τεκμηριωμένες εξηγήσεις και μείωση των hallucinations."
       }
     },
     projects: {

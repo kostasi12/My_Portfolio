@@ -71,7 +71,7 @@ export default function About({ t }: any) {
                         <>React • Next.js • Tailwind • HTML {"\n"} CSS • JS • Swift</>
                     )}
                     {key === 'ml' && (
-                        <>PyTorch • Computer Vision {"\n"} CNN • Transformers</>
+                        <>PyTorch • GNNs • GraphRAG • LLMs {"\n"} XGBoost • Computer Vision • CNN • Transformers</>
                     )}
                     {key === 'tools' && (
                         <> Git • GitHub • Postman • Vercel </> 
